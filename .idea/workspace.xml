@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="844bbbb2-ba33-4ded-816e-e43cf9779e75" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1ZC4gH4rDacUi88IKhXrAim4Mlz" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RunManager" selected="Application.WekaFeatureSelection">
+    <configuration name="WekaFeatureSelection" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="WekaFeatureSelection" />
+      <module name="DataMiningLearning" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="myMissingValues" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="MyMissingValues" />
+      <module name="DataMiningLearning" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.WekaFeatureSelection" />
+      <item itemvalue="Application.myMissingValues" />
+    </list>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="844bbbb2-ba33-4ded-816e-e43cf9779e75" name="Default Changelist" comment="" />
+      <created>1584329851871</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1584329851871</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="242" y="91" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585411365666">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state x="242" y="91" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1474.864@0.0.1474.864" timestamp="1585411365666" />
+    <state x="567" y="141" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1584330075104">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state x="567" y="141" key="#com.intellij.ide.macro.MacrosDialog/0.0.1474.864@0.0.1474.864" timestamp="1584330075104" />
+    <state x="517" y="217" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1584933859008">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state x="517" y="217" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1474.864@0.0.1474.864" timestamp="1584933859008" />
+    <state x="562" y="194" key="FileChooserDialogImpl" timestamp="1584625752290">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state x="562" y="194" key="FileChooserDialogImpl/0.0.1474.864@0.0.1474.864" timestamp="1584625752290" />
+    <state width="1433" height="120" key="GridCell.Tab.0.bottom" timestamp="1585411990531">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state width="1433" height="120" key="GridCell.Tab.0.bottom/0.0.1474.864@0.0.1474.864" timestamp="1585411990531" />
+    <state width="1433" height="120" key="GridCell.Tab.0.center" timestamp="1585411990531">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state width="1433" height="120" key="GridCell.Tab.0.center/0.0.1474.864@0.0.1474.864" timestamp="1585411990531" />
+    <state width="1433" height="120" key="GridCell.Tab.0.left" timestamp="1585411990531">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state width="1433" height="120" key="GridCell.Tab.0.left/0.0.1474.864@0.0.1474.864" timestamp="1585411990531" />
+    <state width="1433" height="120" key="GridCell.Tab.0.right" timestamp="1585411990531">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state width="1433" height="120" key="GridCell.Tab.0.right/0.0.1474.864@0.0.1474.864" timestamp="1585411990531" />
+    <state x="269" y="14" key="SettingsEditor" timestamp="1585412297036">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state x="269" y="14" key="SettingsEditor/0.0.1474.864@0.0.1474.864" timestamp="1585412297036" />
+    <state x="387" y="256" key="com.intellij.ide.util.TipDialog" timestamp="1585412365539">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state x="387" y="256" key="com.intellij.ide.util.TipDialog/0.0.1474.864@0.0.1474.864" timestamp="1585412365539" />
+    <state x="0" y="53" key="new project wizard" timestamp="1584625426439">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state x="0" y="53" key="new project wizard/0.0.1474.864@0.0.1474.864" timestamp="1584625426439" />
+    <state x="394" y="197" key="run.anything.popup" timestamp="1585409008251">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state x="394" y="197" key="run.anything.popup/0.0.1474.864@0.0.1474.864" timestamp="1585409008251" />
+  </component>
+</project>
