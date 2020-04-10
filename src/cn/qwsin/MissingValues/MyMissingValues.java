@@ -1,9 +1,11 @@
+package cn.qwsin.MissingValues;
+
 import weka.core.Instances;
-import weka.core.converters.ConverterUtils;
 import weka.core.converters.ConverterUtils.DataSource;
+import cn.qwsin.InstanceOutput.Output;
 
 public class MyMissingValues {
-    public static void FillMissing(Instances instances){
+    public static void fillMissing(Instances instances){
         int dim = instances.numAttributes();/*特征数量*/
         int num = instances.numInstances();/*数据组数*/
 
@@ -45,7 +47,7 @@ public class MyMissingValues {
         //预先打印出来看一下，以便发现前后区别
         output.printAttribute(instances);
         output.printStep("补充缺失值...");
-        FillMissing(instances);
+        fillMissing(instances);
 
         output.printStep("打印到屏幕");
         output.printAttribute(instances);

@@ -1,10 +1,12 @@
+package cn.qwsin.Normalize;
+
+import cn.qwsin.InstanceOutput.Output;
 import weka.core.Instances;
-import weka.core.converters.ConverterUtils;
 import weka.core.converters.ConverterUtils.DataSource;
 import weka.filters.Filter;
 
 public class WekaNormalize {
-    public static Instances Normalize(Instances instances) throws Exception {
+    public static Instances normalize(Instances instances) throws Exception {
         weka.filters.unsupervised.attribute.Normalize norm = new weka.filters.unsupervised.attribute.Normalize();//建立一个归一化filter
         norm.setInputFormat(instances);//为filter导入数据
         Instances newInstances = Filter.useFilter(instances, norm);//得到归一化后的数据
@@ -18,7 +20,7 @@ public class WekaNormalize {
         Instances instances = source.getDataSet();//导入数据
 
         output.printStep("归一化处理..");
-        Instances newInstances=Normalize(instances);
+        Instances newInstances= normalize(instances);
 
         output.printStep("打印结果");
         output.printAttribute(newInstances);

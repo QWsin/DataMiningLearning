@@ -1,11 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="844bbbb2-ba33-4ded-816e-e43cf9779e75" name="Default Changelist" comment="" />
+    <list default="true" id="844bbbb2-ba33-4ded-816e-e43cf9779e75" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TestApriori.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/qwsin/FPMining/Apriori.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyMissingValues.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/qwsin/MissingValues/MyMissingValues.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Output.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/qwsin/InstanceOutput/Output.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WekaFeatureSelection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/qwsin/FeatureSelection/WekaFeatureSelection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WekaNormalize.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/qwsin/Normalize/WekaNormalize.java" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="DataMiningLearning" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/qwsin/MissingValues/MyMissingValues.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="130">
+              <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/qwsin/FeatureSelection/WekaFeatureSelection.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="78">
+              <caret line="13" column="44" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/qwsin/Normalize/WekaNormalize.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="130">
+              <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/cn/qwsin/FPMining/Apriori.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="371">
+              <caret line="27" column="13" lean-forward="true" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/TestApriori.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="461">
+              <caret line="24" column="44" lean-forward="true" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/qwsin/InstanceOutput/Output.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -14,7 +99,99 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>ArrayList</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/cn/qwsin/InstanceOutput/Output.java" />
+        <option value="$PROJECT_DIR$/src/cn/qwsin/MissingValues/MyMissingValues.java" />
+        <option value="$PROJECT_DIR$/src/cn/qwsin/FeatureSelection/WekaFeatureSelection.java" />
+        <option value="$PROJECT_DIR$/src/cn/qwsin/Normalize/WekaNormalize.java" />
+        <option value="$PROJECT_DIR$/src/TestApriori.java" />
+        <option value="$PROJECT_DIR$/src/cn/qwsin/FPMining/Apriori.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="45" />
+    <option name="y" value="25" />
+    <option name="width" value="1750" />
+    <option name="height" value="1030" />
+  </component>
   <component name="ProjectId" id="1ZC4gH4rDacUi88IKhXrAim4Mlz" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="DataMiningLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataMiningLearning" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataMiningLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataMiningLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataMiningLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataMiningLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="qwsin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataMiningLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataMiningLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="qwsin" type="462c0819:PsiDirectoryNode" />
+              <item name="FeatureSelection" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataMiningLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataMiningLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="qwsin" type="462c0819:PsiDirectoryNode" />
+              <item name="FPMining" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataMiningLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataMiningLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="qwsin" type="462c0819:PsiDirectoryNode" />
+              <item name="InstanceOutput" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataMiningLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataMiningLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="qwsin" type="462c0819:PsiDirectoryNode" />
+              <item name="MissingValues" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataMiningLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataMiningLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="qwsin" type="462c0819:PsiDirectoryNode" />
+              <item name="Normalize" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -22,22 +199,37 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
   <component name="RunManager" selected="Application.WekaFeatureSelection">
     <configuration name="WekaFeatureSelection" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="WekaFeatureSelection" />
+      <option name="MAIN_CLASS_NAME" value="cn.qwsin.FeatureSelection.WekaFeatureSelection" />
       <module name="DataMiningLearning" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="myMissingValues" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="MyMissingValues" />
+      <option name="MAIN_CLASS_NAME" value="cn.qwsin.MissingValues.MyMissingValues" />
       <module name="DataMiningLearning" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -48,6 +240,9 @@
       <item itemvalue="Application.myMissingValues" />
     </list>
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="844bbbb2-ba33-4ded-816e-e43cf9779e75" name="Default Changelist" comment="" />
@@ -55,8 +250,57 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584329851871</updated>
+      <workItem from="1586491444501" duration="6433000" />
     </task>
     <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="6433000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1488" height="878" extended-state="6" />
+    <layout>
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" sideWeight="0.50065875" side_tool="true" weight="0.2494759" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49934125" visible="true" weight="0.24598183" />
+      <window_info id="Structure" order="1" sideWeight="0.50065875" side_tool="true" weight="0.2494759" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" weight="0.32938075" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" weight="0.32806325" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32806325" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
     <state x="242" y="91" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585411365666">
@@ -71,10 +315,10 @@
       <screen x="0" y="0" width="1474" height="864" />
     </state>
     <state x="517" y="217" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1474.864@0.0.1474.864" timestamp="1584933859008" />
-    <state x="562" y="194" key="FileChooserDialogImpl" timestamp="1584625752290">
+    <state x="562" y="194" key="FileChooserDialogImpl" timestamp="1585750225167">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
-    <state x="562" y="194" key="FileChooserDialogImpl/0.0.1474.864@0.0.1474.864" timestamp="1584625752290" />
+    <state x="562" y="194" key="FileChooserDialogImpl/0.0.1474.864@0.0.1474.864" timestamp="1585750225167" />
     <state width="1433" height="120" key="GridCell.Tab.0.bottom" timestamp="1585411990531">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
@@ -95,10 +339,10 @@
       <screen x="0" y="0" width="1474" height="864" />
     </state>
     <state x="269" y="14" key="SettingsEditor/0.0.1474.864@0.0.1474.864" timestamp="1585412297036" />
-    <state x="387" y="256" key="com.intellij.ide.util.TipDialog" timestamp="1585412365539">
+    <state x="387" y="256" key="com.intellij.ide.util.TipDialog" timestamp="1585750177814">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
-    <state x="387" y="256" key="com.intellij.ide.util.TipDialog/0.0.1474.864@0.0.1474.864" timestamp="1585412365539" />
+    <state x="387" y="256" key="com.intellij.ide.util.TipDialog/0.0.1474.864@0.0.1474.864" timestamp="1585750177814" />
     <state x="0" y="53" key="new project wizard" timestamp="1584625426439">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
@@ -107,5 +351,58 @@
       <screen x="0" y="0" width="1474" height="864" />
     </state>
     <state x="394" y="197" key="run.anything.popup/0.0.1474.864@0.0.1474.864" timestamp="1585409008251" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/MissingValues/MyMissingValues.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/FeatureSelection/WekaFeatureSelection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="13" column="44" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/InstanceOutput/Output.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/Normalize/WekaNormalize.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TestApriori.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="461">
+          <caret line="24" column="44" lean-forward="true" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/FPMining/Apriori.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="27" column="13" lean-forward="true" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
