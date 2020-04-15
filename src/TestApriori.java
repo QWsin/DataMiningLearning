@@ -1,7 +1,9 @@
-import cn.qwsin.FPMining.Apriori;
+import cn.qwsin.FrequentPatternMining.Apriori;
 
 import java.io.*;
 import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Set;
 
 public class TestApriori {
     public static void main(String[] args) throws IOException {
@@ -10,18 +12,24 @@ public class TestApriori {
         FileReader fr = new FileReader(file);
         BufferedReader br = new BufferedReader(fr);
 
-        ArrayList<ArrayList<String>> data = new ArrayList<>();
+        ArrayList<Set<String>> data = new ArrayList<>();
 
         String s;
         while((s = br.readLine())!=null){
-            String[] ss = s.split(",");//分割
-            data.add(new ArrayList<>());
+            String[] ss = s.split("[, ]");//正则表达式分割，因为空格和逗号都会出现
+            data.add(new HashSet<>());
             int pos = data.size();
-            for(int i=0;i<ss.length;++i) {
+            for(int i=1;i<ss.length;++i) {
                 data.get(pos - 1).add(ss[i]);
             }
         }
 
-        Apriori apriori = new Apriori(data);
+//        for(Set<String> set: data){
+//            System.out.println(set);
+//        }
+
+        Apriori apriori = new Apriori(data,0.22f,0.7f);
+        apriori.findAllFrequentItem();
+        apriori.findAssociationRules();
     }
 }
