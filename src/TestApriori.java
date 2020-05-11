@@ -1,9 +1,7 @@
 import cn.qwsin.FrequentPatternMining.Apriori;
 
 import java.io.*;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 public class TestApriori {
     public static void main(String[] args) throws IOException {
@@ -12,16 +10,16 @@ public class TestApriori {
         FileReader fr = new FileReader(file);
         BufferedReader br = new BufferedReader(fr);
 
-        ArrayList<Set<String>> data = new ArrayList<>();
+        Map<Set<String>,Integer> data = new HashMap<>();
 
         String s;
         while((s = br.readLine())!=null){
-            String[] ss = s.split("[, ]");//正则表达式分割，因为空格和逗号都会出现
-            data.add(new HashSet<>());
-            int pos = data.size();
-            for(int i=1;i<ss.length;++i) {
-                data.get(pos - 1).add(ss[i]);
+            String[] ss = s.trim().split("[, ]");//正则表达式分割，因为空格和逗号都会出现
+            Set<String> set = new HashSet<>();
+            for(int i=0;i<ss.length;++i) {//第一列有序号的时候从1开始，否则从0开始
+                set.add(ss[i]);
             }
+            data.put(set,0);
         }
 
 //        for(Set<String> set: data){

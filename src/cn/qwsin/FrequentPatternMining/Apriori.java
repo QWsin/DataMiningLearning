@@ -2,16 +2,20 @@ package cn.qwsin.FrequentPatternMining;
 
 import java.util.*;
 
+import static java.lang.Math.min;
+
 public class Apriori {
     private int N;//事务总数
     private float minSup;//支持度
-    private float minConf;//
-    private ArrayList<Set<String>> data;//事务数据集
+    private float minConf;//置信度
+    private Map<Set<String>,Integer> data;//事务数据集，integer记录包含频繁模式个数，方便剪枝
 
     private Map<Integer,Set<Set<String>>> FP;//存储频繁模式结果
     private Map<Set<String>,Set<Set<String>>> associatedRules;//存储关联规则
     private Map<Set<String>,Float> sup;//存储支持度
+    private Map<String,Integer> id;//给每个项编号，便于计算哈希值
 
+    int[] bucket;//桶
 
     //打印频繁模式
     private void printFP(int _pos){
@@ -33,27 +37,33 @@ public class Apriori {
     }
 
 
-    public Apriori(ArrayList<Set<String>> data,float minSup,float minConf){
+    public Apriori(Map<Set<String>,Integer> data,float minSup,float minConf){
         this.N = data.size();
-        this.data = new ArrayList<>(data);
+        this.data = new HashMap<>(data);
         this.minSup = minSup;
         this.minConf = minConf;
         this.FP = new HashMap<>();
         this.associatedRules = new HashMap<>();
         this.sup = new HashMap<>();
+        this.id = new HashMap<>();
+        this.bucket = new int[min(this.N*this.N+1,2000003)];
     }
 
-    //使用HashMap<Set<String>,Integer>来存储频繁模式
     //找出一项的频繁模式
     private Set<Set<String>> FP_one(){
         HashMap<Set<String>,Integer> count = new HashMap<>();//统计每种项的出现次数
-        for (Set<String> list : data) {
-            for (String s : list) {
+
+        for (Map.Entry<Set<String>,Integer> entry: data.entrySet()) {
+            for (String s : entry.getKey()) {
                 int v = 0;
                 Set<String> tmp = new HashSet<>();
                 tmp.add(s);
-                if (count.containsKey(tmp)) {
+                if (count.containsKey(tmp)) {//之前出现过，在之前的基础上+1
                     v = count.get(tmp);
+                }
+                else{//之前没有出现过，就编号
+                    int cnt=id.size();
+                    id.put(s,cnt+1);
                 }
                 count.put(tmp, v + 1);
             }
@@ -85,13 +95,16 @@ public class Apriori {
         return true;
     }
 
+    /*
+    TODO:添加桶，提前过滤某些不可能是频繁模式的模式
+     */
     //在事务数据库中计算items项的出现次数
     private float getSupport(Set<String> items){
         if(sup.containsKey(items)) return sup.get(items);
         float res=0;
-        for(Set<String> set:data){
+        for(Map.Entry<Set<String>,Integer> entry: data.entrySet()){
             //由于短路运算符，只有当事务包含items时才会++res
-            if(set.containsAll(items)){
+            if(entry.getKey().containsAll(items)){
                 res += 1;
             }
         }
@@ -100,9 +113,48 @@ public class Apriori {
         return res/this.N;
     }
 
+    //获取集合哈希值，用于桶
+    private int getHash(Set<String> items){
+        long ret=0;
+        for(String s : items){
+            ret = (ret * (id.size()+1) + id.get(s)) % bucket.length;
+        }
+        return (int)ret;
+    }
+
+    //搜索每个事务中的所有k项集，将其加入桶并计数
+    /*
+    private void dfsKItems(Iterator<String> it, Set<String> kItems,int k){
+        if(kItems.size() == k){//已经够k个了，就不再往下了
+            bucket[getHash(kItems)] += 1;
+            return ;
+        }
+
+        //TODO:拷贝一个it的备份使得可以进行两次分支运算
+
+        if(!it.hasNext()) return ;
+        Iterator<String> newit = new HashSet<String>().iterator(it);
+        String cur = it.next();
+        dfsKItems(it,kItems,k);//不将当前加入
+    }
+    */
+
+    //将bucket处理为装有所有k项的桶(dfsKItems未完成)
+    /*
+    private void fillBucket(int k){
+        for(int i=0;i<bucket.length;++i) bucket[i]=0;
+        Set<String> kItems = new HashSet<>();
+        //对每项事务都进行搜索
+        for(Map.Entry<Set<String>, Integer> entry : data.entrySet()){
+            Iterator<String> it  = entry.getKey().iterator();
+            dfsKItems(it,kItems,k);
+        }
+    }
+    */
 
     //由k-1项频繁模式连接出k项，并检测是否满足支持度要求
     private Set<Set<String>> connectCheck(Set<Set<String>> curFP, int k){
+//        if(k<6) fillBucket(k);（该函数未完成）
         Set<Set<String>> res = new HashSet<>();
         for (Set<String> set1 : curFP) {
             for (Set<String> set2 : curFP) {
@@ -120,19 +172,38 @@ public class Apriori {
         return res;
     }
 
+    //简化数据集，没有k项频繁模式的数据集一定没有k+1项频繁模式
+    private void simplifyData(Set<Set<String>> fp){
+        for(Set<String> set: fp){
+            for(Map.Entry<Set<String>,Integer> entry : data.entrySet()){
+                if(entry.getKey().containsAll(set)) {//出现频繁模式
+                    int cnt=entry.getValue();
+                    data.put(entry.getKey(),cnt+1);
+                }
+            }
+        }
+        for(Iterator it = data.entrySet().iterator();it.hasNext();){
+            Map.Entry<Set<String>,Integer> entry= (Map.Entry<Set<String>, Integer>) it.next();
+            if(entry.getValue().equals(0)) {//这个事务没有出现频繁模式，那么在以后也不会出现，将其删除
+                it.remove();
+            }
+            else {
+                data.put(entry.getKey(),0);//归零，保证下次计数正确性
+            }
+        }
+    }
+
     //寻找频繁模式
     public void findAllFrequentItem(){
         Set<Set<String>> fp_cur=this.FP_one();
         FP.put(1,fp_cur);
 
-//        Set<String> tmp = new HashSet<>();tmp.add("I5");tmp.add("I1");tmp.add("I2");
-//        System.out.println(getSupport(tmp));
-
-        int n=data.size();
-        for(int k=2;k<=n;++k)
+        for(int k=2;k<=N;++k)
         {
+            System.out.println("当前事务集大小:"+data.size());
             fp_cur= connectCheck(fp_cur,k);
             if(fp_cur.isEmpty()) break;
+            simplifyData(fp_cur);//删除没有k项频繁模式的事务集
             FP.put(k,fp_cur);
         }
 
