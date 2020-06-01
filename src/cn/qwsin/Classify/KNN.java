@@ -121,7 +121,7 @@ public class KNN {
                 ++OK;
                 result="正确";
             }
-            System.out.printf("预测lable:%s 真实lable:%s %s\n",predictLable,data.label,result);
+            System.out.printf("预测label:%s 真实label:%s %s\n",predictLable,data.label,result);
         }
         System.out.printf("总共%d个，正确%d个，错误%d个,正确率%.2f%%\n", testSet.size(),OK, testSet.size()-OK,(double)OK/ testSet.size()*100);
     }
