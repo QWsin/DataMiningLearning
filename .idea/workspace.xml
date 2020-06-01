@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="844bbbb2-ba33-4ded-816e-e43cf9779e75" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/TestKNN.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/qwsin/Classify/KNN.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TestDecisionTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/qwsin/Classify/DecisionTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TestApriori.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestApriori.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/qwsin/FrequentPatternMining/Apriori.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/qwsin/FrequentPatternMining/Apriori.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/qwsin/Classify/KNN.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/qwsin/Classify/KNN.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,11 +22,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cn/qwsin/FrequentPatternMining/Apriori.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="249" column="1" lean-forward="true" selection-start-line="249" selection-start-column="1" selection-end-line="249" selection-end-column="1" />
+            <state>
+              <caret line="245" column="9" selection-start-line="245" selection-start-column="9" selection-end-line="245" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -35,44 +34,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/qwsin/Classify/KNN.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/cn/qwsin/Classify/DecisionTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3042">
-              <caret line="117" column="35" lean-forward="true" selection-start-line="117" selection-start-column="35" selection-end-line="117" selection-end-column="35" />
+            <state relative-caret-position="331">
+              <caret line="293" column="33" selection-start-line="293" selection-start-column="33" selection-end-line="293" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#332#333#0" expanded="true" />
+                <element signature="e#373#374#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/TestKNN.java">
+        <entry file="file://$PROJECT_DIR$/src/TestDecisionTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/TestApriori.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/qwsin/InstanceOutput/Output.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="21" column="42" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
+            <state relative-caret-position="208">
+              <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -93,6 +73,7 @@
     <findStrings>
       <find>ArrayList</find>
       <find>data.size()</find>
+      <find>build</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -108,12 +89,14 @@
         <option value="$PROJECT_DIR$/src/cn/qwsin/FPMining/Apriori.java" />
         <option value="$PROJECT_DIR$/src/TestApriori.java" />
         <option value="$PROJECT_DIR$/src/cn/qwsin/TestKNN.java" />
-        <option value="$PROJECT_DIR$/src/cn/qwsin/Classify/KNN.java" />
         <option value="$PROJECT_DIR$/src/cn/qwsin/FrequentPatternMining/Apriori.java" />
+        <option value="$PROJECT_DIR$/src/cn/qwsin/Classify/KNN.java" />
+        <option value="$PROJECT_DIR$/src/TestDecisionTree.java" />
+        <option value="$PROJECT_DIR$/src/cn/qwsin/Classify/DecisionTree.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="45" />
     <option name="y" value="25" />
     <option name="width" value="1750" />
@@ -143,6 +126,13 @@
               <item name="DataMiningLearning" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="qwsin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataMiningLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataMiningLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="qwsin" type="462c0819:PsiDirectoryNode" />
+              <item name="Classify" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DataMiningLearning" type="b2602c69:ProjectViewProjectNode" />
@@ -216,9 +206,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TestApriori">
-    <configuration name="TestApriori" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="TestApriori" />
+  <component name="RunManager" selected="Application.TestDecisionTree">
+    <configuration name="TestDecisionTree" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="TestDecisionTree" />
       <module name="DataMiningLearning" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -240,7 +230,7 @@
     </configuration>
     <list>
       <item itemvalue="Application.WekaFeatureSelection" />
-      <item itemvalue="Application.TestApriori" />
+      <item itemvalue="Application.TestDecisionTree" />
       <item itemvalue="Application.myMissingValues" />
     </list>
   </component>
@@ -265,12 +255,20 @@
       <workItem from="1586953637411" duration="5151000" />
       <workItem from="1587030003618" duration="378000" />
       <workItem from="1587563800406" duration="3693000" />
-      <workItem from="1589177052858" duration="5500000" />
+      <workItem from="1589177052858" duration="6119000" />
+      <workItem from="1589183312558" duration="22000" />
+      <workItem from="1589252591023" duration="5539000" />
+      <workItem from="1589335860978" duration="5000" />
+      <workItem from="1589337084725" duration="5427000" />
+      <workItem from="1589554979401" duration="1752000" />
+      <workItem from="1589719147734" duration="4868000" />
+      <workItem from="1589781603791" duration="652000" />
+      <workItem from="1590977115578" duration="5540000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51028000" />
+    <option name="totallyTimeSpent" value="75452000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -285,8 +283,8 @@
     <frame x="-7" y="-7" width="1488" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49538866" visible="true" weight="0.22990915" />
-      <window_info id="Structure" order="1" sideWeight="0.5039474" side_tool="true" weight="0.22990915" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48880106" visible="true" weight="0.24248777" />
+      <window_info id="Structure" order="1" sideWeight="0.51119894" side_tool="true" visible="true" weight="0.24248777" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -300,11 +298,12 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32806325" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32806325" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3276316" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32806325" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32806325" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32806325" />
+      <window_info anchor="bottom" id="Duplicates" order="13" weight="0.32938075" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -350,6 +349,46 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
     <state x="242" y="91" key="#com.intellij.execution.impl.EditConfigurationsDialog" />
     <state x="242" y="91" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1474.864@0.0.1474.864" />
@@ -377,11 +416,29 @@
     <state x="394" y="197" key="run.anything.popup/0.0.1474.864@0.0.1474.864" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/cn/qwsin/Classify/DecisionTree.java</url>
+          <line>289</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/cn/qwsin/Classify/DecisionTree.java</url>
+          <line>250</line>
+          <properties />
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="((HashMap.Node)((HashMap)associatedRules).entrySet().toArray()[1]).getKey()" custom="java.util.HashMap.Node,java.util.HashMap" />
         <watch expression="((HashMap.Node)((HashMap)associatedRules).entrySet().toArray()[0]).getKey()" custom="java.util.HashMap.Node,java.util.HashMap" />
         <watch expression="items_s" />
+        <watch expression="((HashMap)divSets).entrySet().toArray()[1]" custom="java.util.HashMap" />
+        <watch expression="divSets" />
       </configuration>
     </watches-manager>
   </component>
@@ -417,16 +474,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/InstanceOutput/Output.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="21" column="42" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_241/src.zip!/java/lang/Double.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="244">
@@ -434,10 +481,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TestApriori.java">
+    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/FrequentPatternMining/Apriori.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+        <state>
+          <caret line="245" column="9" selection-start-line="245" selection-start-column="9" selection-end-line="245" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/Classify/KNN.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="988">
+          <caret line="43" column="17" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -451,22 +508,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/Classify/KNN.java">
+    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/InstanceOutput/Output.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3042">
-          <caret line="117" column="35" lean-forward="true" selection-start-line="117" selection-start-column="35" selection-end-line="117" selection-end-column="35" />
+        <state relative-caret-position="494">
+          <caret line="21" column="42" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/FrequentPatternMining/Apriori.java">
+    <entry file="file://$PROJECT_DIR$/src/TestApriori.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="249" column="1" lean-forward="true" selection-start-line="249" selection-start-column="1" selection-end-line="249" selection-end-column="1" />
+        <state relative-caret-position="312">
+          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TestDecisionTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/Classify/DecisionTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="293" column="33" selection-start-line="293" selection-start-column="33" selection-end-line="293" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#332#333#0" expanded="true" />
+            <element signature="e#373#374#0" expanded="true" />
           </folding>
         </state>
       </provider>
