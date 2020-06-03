@@ -1,5 +1,8 @@
 package cn.qwsin.Classify;
 
+import cn.qwsin.MissingValues.MissingValueForGeneral;
+import cn.qwsin.common.Find;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -99,15 +102,7 @@ public class KNN {
             dis[pos]=Integer.MAX_VALUE;
         }
 
-        int maxCount=0;
-        String result="";
-        for(Map.Entry<String,Integer> entry : count.entrySet()){
-            if(entry.getValue() > maxCount){
-                maxCount = entry.getValue();
-                result = entry.getKey();
-            }
-        }
-        return result;
+        return Find.findMost(count);
     }
 
     //预测测试集的lable并统计正确率

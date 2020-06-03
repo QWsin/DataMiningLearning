@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="844bbbb2-ba33-4ded-816e-e43cf9779e75" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/TestDecisionTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/qwsin/Classify/DecisionTree.java" afterDir="false" />
+    <list default="true" id="844bbbb2-ba33-4ded-816e-e43cf9779e75" name="Default Changelist" comment="完成决策树(DecisionTree)的连续值离散化处理/缺失值处理/数据集测试（adult数据集正确率）">
+      <change afterPath="$PROJECT_DIR$/src/cn/qwsin/MissingValues/MissingValueForGeneral.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/qwsin/common/Find.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/工作.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TestDecisionTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestDecisionTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/qwsin/Classify/DecisionTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/qwsin/Classify/DecisionTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cn/qwsin/Classify/KNN.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/qwsin/Classify/KNN.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/qwsin/MissingValues/MyMissingValues.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/qwsin/MissingValues/MissingValuesForWeka.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,13 +27,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/qwsin/FrequentPatternMining/Apriori.java">
+        <entry file="file://$PROJECT_DIR$/工作.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="245" column="9" selection-start-line="245" selection-start-column="9" selection-end-line="245" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="286">
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -37,12 +38,22 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/cn/qwsin/Classify/DecisionTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="293" column="33" selection-start-line="293" selection-start-column="33" selection-end-line="293" selection-end-column="33" />
+            <state relative-caret-position="357">
+              <caret line="444" column="44" lean-forward="true" selection-start-line="444" selection-start-column="44" selection-end-line="444" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#332#333#0" expanded="true" />
-                <element signature="e#373#374#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/qwsin/MissingValues/MissingValueForGeneral.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1170">
+              <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -51,8 +62,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TestDecisionTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
+            <state relative-caret-position="312">
+              <caret line="12" column="66" lean-forward="true" selection-start-line="12" selection-start-column="66" selection-end-line="12" selection-end-column="66" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -74,6 +85,7 @@
       <find>ArrayList</find>
       <find>data.size()</find>
       <find>build</find>
+      <find>System</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -90,9 +102,14 @@
         <option value="$PROJECT_DIR$/src/TestApriori.java" />
         <option value="$PROJECT_DIR$/src/cn/qwsin/TestKNN.java" />
         <option value="$PROJECT_DIR$/src/cn/qwsin/FrequentPatternMining/Apriori.java" />
+        <option value="$PROJECT_DIR$/src/cn/qwsin/MissingValues/MissingValuesForWeka.java" />
+        <option value="$PROJECT_DIR$/工作.txt" />
+        <option value="$PROJECT_DIR$/src/cn/qwsin/common/findMost.java" />
         <option value="$PROJECT_DIR$/src/cn/qwsin/Classify/KNN.java" />
-        <option value="$PROJECT_DIR$/src/TestDecisionTree.java" />
+        <option value="$PROJECT_DIR$/src/cn/qwsin/common/Find.java" />
+        <option value="$PROJECT_DIR$/src/cn/qwsin/MissingValues/MissingValueForGeneral.java" />
         <option value="$PROJECT_DIR$/src/cn/qwsin/Classify/DecisionTree.java" />
+        <option value="$PROJECT_DIR$/src/TestDecisionTree.java" />
       </list>
     </option>
   </component>
@@ -109,6 +126,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -127,53 +145,10 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="qwsin" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="DataMiningLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataMiningLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="qwsin" type="462c0819:PsiDirectoryNode" />
-              <item name="Classify" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataMiningLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataMiningLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="qwsin" type="462c0819:PsiDirectoryNode" />
-              <item name="FeatureSelection" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataMiningLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataMiningLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="qwsin" type="462c0819:PsiDirectoryNode" />
-              <item name="FrequentPatternMining" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataMiningLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataMiningLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="qwsin" type="462c0819:PsiDirectoryNode" />
-              <item name="InstanceOutput" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataMiningLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataMiningLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="qwsin" type="462c0819:PsiDirectoryNode" />
-              <item name="MissingValues" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataMiningLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataMiningLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="qwsin" type="462c0819:PsiDirectoryNode" />
-              <item name="Normalize" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="ProjectViewState">
@@ -186,13 +161,14 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../HelloWolrd" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../A+B_problem" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.gutterIcons" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -222,7 +198,7 @@
       </method>
     </configuration>
     <configuration name="myMissingValues" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="cn.qwsin.MissingValues.MyMissingValues" />
+      <option name="MAIN_CLASS_NAME" value="cn.qwsin.MissingValues.MissingValuesForWeka" />
       <module name="DataMiningLearning" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -263,12 +239,32 @@
       <workItem from="1589554979401" duration="1752000" />
       <workItem from="1589719147734" duration="4868000" />
       <workItem from="1589781603791" duration="652000" />
-      <workItem from="1590977115578" duration="5540000" />
+      <workItem from="1590977115578" duration="7181000" />
+      <workItem from="1591018903164" duration="1821000" />
+      <workItem from="1591064549560" duration="12311000" />
+      <workItem from="1591091499647" duration="11589000" />
+      <workItem from="1591150936727" duration="7588000" />
+      <workItem from="1591162249524" duration="3860000" />
     </task>
+    <task id="LOCAL-00001" summary="对于离散属性的决策树分类算法完成">
+      <created>1590982784011</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1590982784011</updated>
+    </task>
+    <task id="LOCAL-00002" summary="完成KNN分类算法">
+      <created>1590982809813</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1590982809813</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75452000" />
+    <option name="totallyTimeSpent" value="114262000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -281,29 +277,28 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1488" height="878" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48880106" visible="true" weight="0.24248777" />
-      <window_info id="Structure" order="1" sideWeight="0.51119894" side_tool="true" visible="true" weight="0.24248777" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4808959" visible="true" weight="0.25995806" />
+      <window_info id="Structure" order="1" sideWeight="0.51910406" side_tool="true" visible="true" weight="0.25995806" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" sideWeight="0.50065875" side_tool="true" weight="0.2494759" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32938075" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.5322793" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3992095" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32806325" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3276316" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32674572" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32806325" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32806325" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32806325" />
-      <window_info anchor="bottom" id="Duplicates" order="13" weight="0.32938075" />
+      <window_info anchor="bottom" id="Duplicates" order="13" weight="0.32806325" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -389,6 +384,11 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="对于离散属性的决策树分类算法完成" />
+    <MESSAGE value="完成KNN分类算法" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成KNN分类算法" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="242" y="91" key="#com.intellij.execution.impl.EditConfigurationsDialog" />
     <state x="242" y="91" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1474.864@0.0.1474.864" />
@@ -416,22 +416,6 @@
     <state x="394" y="197" key="run.anything.popup/0.0.1474.864@0.0.1474.864" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/cn/qwsin/Classify/DecisionTree.java</url>
-          <line>289</line>
-          <properties />
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/cn/qwsin/Classify/DecisionTree.java</url>
-          <line>250</line>
-          <properties />
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="((HashMap.Node)((HashMap)associatedRules).entrySet().toArray()[1]).getKey()" custom="java.util.HashMap.Node,java.util.HashMap" />
@@ -447,13 +431,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
           <caret line="13" column="44" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/MissingValues/MyMissingValues.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -478,26 +455,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="244">
           <caret line="500" column="25" selection-start-line="500" selection-start-column="25" selection-end-line="500" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/FrequentPatternMining/Apriori.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="245" column="9" selection-start-line="245" selection-start-column="9" selection-end-line="245" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/Classify/KNN.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="988">
-          <caret line="43" column="17" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -528,10 +485,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TestDecisionTree.java">
+    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/FrequentPatternMining/Apriori.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3231">
+          <caret line="245" column="9" selection-start-line="245" selection-start-column="9" selection-end-line="245" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/工作.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/MissingValues/MissingValuesForWeka.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
-          <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/Classify/KNN.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="562">
+          <caret line="104" column="36" lean-forward="true" selection-start-line="104" selection-start-column="36" selection-end-line="104" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/common/Find.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="5" column="39" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/MissingValues/MissingValueForGeneral.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1170">
+          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TestDecisionTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="12" column="66" lean-forward="true" selection-start-line="12" selection-start-column="66" selection-end-line="12" selection-end-column="66" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -540,12 +548,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/qwsin/Classify/DecisionTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="293" column="33" selection-start-line="293" selection-start-column="33" selection-end-line="293" selection-end-column="33" />
+        <state relative-caret-position="357">
+          <caret line="444" column="44" lean-forward="true" selection-start-line="444" selection-start-column="44" selection-end-line="444" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#332#333#0" expanded="true" />
-            <element signature="e#373#374#0" expanded="true" />
           </folding>
         </state>
       </provider>

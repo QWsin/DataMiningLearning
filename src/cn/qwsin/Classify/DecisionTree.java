@@ -5,24 +5,38 @@ import java.io.File;
 import java.io.FileReader;
 import java.util.*;
 
+import static cn.qwsin.MissingValues.MissingValueForGeneral.fillMissing;
+
 public class DecisionTree {
 
     private Set<Record> records;//保存记录
-    private String[] attributes;//保存属性
-    private String LabelName;//保存类别名称
+    private ArrayList<String> attributes;//保存属性
+    private Map<String,Integer> idOfLabel;//记录某种属性对应的编号
+    private Map<String,String> categoryOfAttr;//标记某种属性连续or离散
+    private Map<String,ArrayList<Double>> dividePoint;//标记连续属性的分界点
+    private String[] Labels;//记录属性名
+    private int N;//表示连续属性统一划分为多少段
+
     private TreeNode root;//保存树根
 
     public DecisionTree(){
         records = new HashSet<>();
+        idOfLabel = new HashMap<>();
+        categoryOfAttr = new HashMap<>();
+        dividePoint = new HashMap<>();
+        N = 5;
     }
 
     //Record类表示数据集中一条记录
     public class Record{
         int ID;//数据编号
         public String label;//类别
+        public String answer;//对于测试集，记录答案，以便分析效果
         public Map<String,String> attrDisc;//离散的属性值
+        public Map<String,Double> attrCont;//连续的属性值
         Record(){
             attrDisc = new HashMap<>();
+            attrCont = new HashMap<>();
         }
     }
 
@@ -30,8 +44,11 @@ public class DecisionTree {
     public class AttributeField{
         String name;
         String attrValueDisc;//存放离散属性值
-        public double attrValueContLow;//存放连续属性的上下限
-        public double attrValueContHigh;
+        String attrValueCont;//存放连续属性值
+        AttributeField(){
+            attrValueDisc = null;
+            attrValueCont = null;
+        }
     }
 
 
@@ -49,15 +66,24 @@ public class DecisionTree {
     }
 
     //flag 0:train 1:test
-    //train需要额外处理属性值
     private Record getRecord(String s,int flag){
         Record record = new Record();
-        //TODO:对连续属性的处理
-        String[] value=s.trim().split("[, ]");
-        for(int i=0;i<value.length-(1-flag);++i){
-            record.attrDisc.put(attributes[i],value[i]);//放入特征值
+        String[] value=s.trim().split("[,]");
+        for(int i=0;i<value.length-1;++i){
+            if(isContinuous(attributes.get(i))){
+                //可能出现value为"?"的情况，这种情况使用Double.MAX_VALUE表示
+                if(value[i].trim().equals("?")){
+                    record.attrCont.put(attributes.get(i), Double.MAX_VALUE);
+                }else {
+                    record.attrCont.put(attributes.get(i), new Double(value[i].trim()));
+                }
+            }
+            else{
+                record.attrDisc.put(attributes.get(i),value[i].trim());//放入特征值
+            }
         }
-        if(flag==0)record.label=value[value.length-1];
+        if(flag==0)record.label=value[value.length-1].trim();
+        else record.answer=value[value.length-1].trim();//记录标准答案
         return record;
     }
 
@@ -75,7 +101,7 @@ public class DecisionTree {
         return count;
     }
 
-    //信息熵计算
+    //信息熵计算（根据类别计算，与属性的值无关）
     private double entropy(Set<Record> records){
         Map<String, Integer> count=countLabel(records);
         //对于每种类别，累加值
@@ -89,9 +115,16 @@ public class DecisionTree {
 
     //根据某种属性值将记录划分（由于多处会用到所以构建函数）
     private Map<String,Set<Record>> divByAttr(Set<Record> records, String attributeName){
-        Map<String,Set<Record>> divSets = new HashMap<>();//每个属性值对应一个记录集合
+        Map<String,Set<Record>> divSets = new HashMap<>();//一个属性值对应一个记录集合
         for(Record record: records){
-            String value=record.attrDisc.get(attributeName);//该记录对应属性的值
+            String value=null;
+            //离散值直接处理，连续值划分成离散值处理
+            if(!isContinuous(attributeName)) {
+                value = record.attrDisc.get(attributeName);//该记录对应属性的值
+            }
+            else {
+                value = getContValue(attributeName,record.attrCont.get(attributeName));
+            }
             if(divSets.containsKey(value)){//之前出现过，在原来的基础上添加一个再放入
                 Set<Record> t=divSets.get(value);
                 t.add(record);
@@ -108,9 +141,6 @@ public class DecisionTree {
     //按照某个属性划分之后，信息增益的大小
     private double gainPartition(Set<Record> records, String attributeName){
         double gain=entropy(records);
-
-        //TODO:此处应该有连续->离散的处理
-
         Map<String,Set<Record>> count = divByAttr(records,attributeName);
 
         //累加每种值的贡献
@@ -148,7 +178,10 @@ public class DecisionTree {
             else{
                 //遍历属性，判断是否都一样，只要有一个不同就不满足条件（只有一条记录时一定满足条件）
                 for(String attr : attrNames) {
-                    if (!record.attrDisc.get(attr).equals(tmp.attrDisc.get(attr))){
+                    if (!isContinuous(attr) && !record.attrDisc.get(attr).equals(tmp.attrDisc.get(attr))){
+                        return false;
+                    }
+                    else if(isContinuous(attr) && !record.attrCont.get(attr).equals(tmp.attrCont.get(attr))){
                         return false;
                     }
                 }
@@ -169,6 +202,22 @@ public class DecisionTree {
             }
         }
         return maxNumLabel;
+    }
+
+    //获取连续属性的值，从0开始标号
+    private String getContValue(String attrName, double value){
+        ArrayList<Double> sep=dividePoint.get(attrName);
+        for(int i=1;i<sep.size();++i){//对每个分界点依次比较
+            if(value < sep.get(i)){
+                return String.valueOf(i);
+            }
+        }
+        return String.valueOf(N-1);//都没找到就是最后一个区域的
+    }
+
+    //判断某种属性是否是连续的
+    public boolean isContinuous(String attrName){
+        return categoryOfAttr.get(attrName).equals("continuous");
     }
 
     //使用ID3方法建树
@@ -200,7 +249,9 @@ public class DecisionTree {
                 maxGainName=attrName;
             }
         }
-
+        if(maxGain == 0){
+            maxGainName = attrNames.stream().findFirst().orElse(maxGainName);
+        }
         root.attrName=maxGainName;
 
         //构建新的可用属性集合（去除本节点使用的）
@@ -212,31 +263,61 @@ public class DecisionTree {
         for(Map.Entry<String,Set<Record>> entry: divSets.entrySet()){
             AttributeField attributeField = new AttributeField();
             attributeField.name=maxGainName;
-            attributeField.attrValueDisc=entry.getKey();
+            if(!isContinuous(maxGainName)) {
+                attributeField.attrValueDisc = entry.getKey();
+            }
+            else{
+                attributeField.attrValueCont = entry.getKey();
+            }
             root.children.put(attributeField,rootTree_ID3(entry.getValue(),newAttrNames));
         }
-
         return root;
     }
 
     //对一条新记录预测其分类
     private String classify(TreeNode root,Record record){
-        //TODO:对于连续属性做处理
         if(root.isLeaf()){
             return root.label;
         }
+        //连续的属性需要划分为离散值
+        String value;//该条新记录中该节点分支属性的值
+        if(isContinuous(root.attrName)){
+            value = getContValue(root.attrName,record.attrCont.get(root.attrName));
+        }
+        else{
+            value = record.attrDisc.get(root.attrName);
+        }
 
-        String value = record.attrDisc.get(root.attrName);//记录中该节点分支属性的值
+        //value该分支到哪个儿子
         for(Map.Entry<AttributeField, TreeNode> entry : root.children.entrySet()){
-            if(entry.getKey().attrValueDisc.equals(value)){//判断该分支属性值是否和该记录相同
+            if(!isContinuous(entry.getKey().name) && entry.getKey().attrValueDisc.equals(value)){//判断该分支属性值是否和该记录相同
+                return classify(entry.getValue(), record);
+            }
+            else if(isContinuous(entry.getKey().name) && entry.getKey().attrValueCont.equals(value)){
                 return classify(entry.getValue(), record);
             }
         }
-        System.out.printf("分类出现错误，出现了训练时没有出现的属性值，属性名称:%s,属性值:%s\n",root.attrName,value);
+        //没有匹配上，就随机划分(划分给第一个)
+//        System.out.printf("分类出现错误，出现了训练时没有出现的属性值，属性名称:%s,属性值:%s\n",root.attrName,value);
+        for(Map.Entry<AttributeField, TreeNode> entry : root.children.entrySet()){
+            return classify(entry.getValue(), record);
+        }
         return "";
     }
 
-    //TODO:测试读入函数
+    private void printRecords(){
+        //打印记录，调试语句
+        for(Record record : records){
+            for(Map.Entry<String,String> entry : record.attrDisc.entrySet()){
+                System.out.print(entry.getKey()+":"+entry.getValue()+", ");
+            }
+            for(Map.Entry<String,Double> entry : record.attrCont.entrySet()){
+                System.out.print(entry.getKey()+":"+entry.getValue()+", ");
+            }
+            System.out.println();
+        }
+    }
+
     //加载测试数据
     public Set<Record> loadTestRecord(String filePath){
         Set<Record> records = new HashSet<>();
@@ -248,45 +329,89 @@ public class DecisionTree {
 
             int cnt=0;
             while((s = br.readLine())!=null){//以下为特征
+                if(s.length()==0) continue;
                 Record record = getRecord(s,1);
                 record.ID=++cnt;
-                //TODO:对连续属性的处理
                 records.add(record);
             }
         }catch (Exception e){
             e.printStackTrace();
         }
+        fillMissing(records,attributes,this);
         return records;
     }
 
-    //加载训练数据（因为训练数据有类别而测试数据没有，所以需要分别写读入函数）
+    //加载训练数据
     public void loadTrainRecord(String filePath){
+        Map<String,Double> minV=new HashMap<>();//记录每种连续属性的最大最小值
+        Map<String,Double> maxV=new HashMap<>();
         try{
             File file = new File(filePath);
             FileReader fr = new FileReader(file);
             BufferedReader br = new BufferedReader(fr);
             String s;
-            s = br.readLine();
-            String[] attrs = s.trim().split("[, ]");//第一行 为特征名称
-            LabelName = attrs[attrs.length-1];
-
-            attributes = new String[attrs.length-1];
-            System.arraycopy(attrs, 0, attributes, 0, attrs.length - 1);
+            //在trainData前面应该有对于哪些属性是连续属性的描述,并且与数据间存在一空行
+            attributes = new ArrayList<>();
+            while((s = br.readLine())!=null){
+                if(s.length()==0) break;//空行，标识属性描述结束
+                String name=s.substring(0,s.indexOf(":")).trim();
+                attributes.add(name);
+                if(s.substring(s.indexOf(":")+2,s.length()-1).equals("continuous")){
+                    categoryOfAttr.put(name,"continuous");//标记为连续
+                }
+                else categoryOfAttr.put(name,"discrete");//标记为离散，具体值忽略
+            }
 
             int cnt=0;
-            while((s = br.readLine())!=null){//以下为特征
+            while((s = br.readLine())!=null){//读取属性值
+                if(s.length()==0) continue;//忽略空行
                 Record record=getRecord(s,0);
                 record.ID=++cnt;
+                for(Map.Entry<String,Double> entry : record.attrCont.entrySet()){
+                    if(entry.getValue()==Double.MAX_VALUE) continue;//略过缺失值
+                    if(minV.containsKey(entry.getKey())){
+                        minV.put(entry.getKey(),Math.min(minV.get(entry.getKey()),entry.getValue()));
+                        maxV.put(entry.getKey(),Math.max(minV.get(entry.getKey()),entry.getValue()));
+                    }else{
+                        minV.put(entry.getKey(),entry.getValue());
+                        maxV.put(entry.getKey(),entry.getValue());
+                    }
+                }
                 records.add(record);
             }
+
+            //填充缺失值
+            fillMissing(records,attributes,this);
         }catch (Exception e){
             e.printStackTrace();
+        }
+        //计算总共有多少种类别
+        int cnt=0;
+        for(Record record : records){
+            if(!idOfLabel.containsKey(record.label)){
+                idOfLabel.put(record.label,cnt++);
+            }
+        }
+
+        Labels = new String[idOfLabel.size()];
+        for(Map.Entry<String,Integer> entry : idOfLabel.entrySet()){
+            Labels[entry.getValue()]=entry.getKey();
+        }
+
+        //划分连续属性
+        for(Map.Entry<String,Double> entry : minV.entrySet()){
+            double m=entry.getValue();//该属性最小值
+            double M=maxV.get(entry.getKey());//该属性最大值
+            ArrayList<Double> divide = new ArrayList<>();
+            for(int i=0;i<N;++i){//N+1个点划分
+                divide.add((m*(N-i)+M*N)/N);
+            }
+            dividePoint.put(entry.getKey(),divide);
         }
     }
 
     public void buildTreeID3(){
-        Set<String> attrs=new HashSet<>();
-        Collections.addAll(attrs, attributes);
+        Set<String> attrs = new HashSet<>(attributes);
         root=rootTree_ID3(records,attrs);
     }
 
@@ -297,5 +422,30 @@ public class DecisionTree {
             record.label=classify(root, record);
         }
         return result;
+    }
+
+    //分析结果，打印混淆矩阵
+    public void analyse(Set<Record> result){
+        //先计算有多少正确的
+        int ok=0;
+        int[][] check = new int[idOfLabel.size()][idOfLabel.size()];//第一维实际，第二维预测
+        for(Record record : result){
+            ++check[idOfLabel.get(record.answer)][idOfLabel.get(record.label)];
+            if(record.label.equals(record.answer)) ok+=1;
+        }
+        System.out.printf("测试集共%d个数据，共正确%d个，错误%d个，正确率%.3f%%\n",result.size(),ok,result.size()-ok,(double)ok/result.size()*100);
+
+        //打印首行
+        System.out.print("\t\t");
+        for (String name : Labels) System.out.print(name + "\t");
+        System.out.println();
+
+        for(int i=0;i<Labels.length;++i){
+            System.out.print(Labels[i]+"\t");
+            for(int j=0;j<Labels.length;++j)
+                System.out.print(check[i][j]+"\t");
+            System.out.println();
+        }
+//        printRecords();
     }
 }

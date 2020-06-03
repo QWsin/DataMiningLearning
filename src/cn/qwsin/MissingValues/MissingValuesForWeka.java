@@ -4,7 +4,7 @@ import weka.core.Instances;
 import weka.core.converters.ConverterUtils.DataSource;
 import cn.qwsin.InstanceOutput.Output;
 
-public class MyMissingValues {
+public class MissingValuesForWeka {
     public static void fillMissing(Instances instances){
         int dim = instances.numAttributes();/*特征数量*/
         int num = instances.numInstances();/*数据组数*/
