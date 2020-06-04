@@ -8,8 +8,8 @@ public class TestDecisionTree {
         String keShePath="C:\\Users\\QWsin\\Desktop\\文档\\课程相关\\数据挖掘课设\\data";
         String keChengPath="C:\\Users\\QWsin\\Desktop\\文档\\课程相关\\数据挖掘与大数据分析\\实验3\\数据\\forDecisionTree";
         tree.loadTrainRecord(keShePath+"\\adult.data");
-        Set<DecisionTree.Record> test = tree.loadTestRecord(keShePath+"\\adultself.test");
-        tree.buildTreeID3();
+        Set<DecisionTree.Record> test = tree.loadTestRecord(keShePath+"\\adult.test");
+        tree.buildTree(DecisionTree.CART);
         Set<DecisionTree.Record> result = tree.classifyTest(test);
         tree.analyse(result);
     }

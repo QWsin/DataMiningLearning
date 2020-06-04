@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="844bbbb2-ba33-4ded-816e-e43cf9779e75" name="Default Changelist" comment="完成决策树(DecisionTree)的连续值离散化处理/缺失值处理/数据集测试（adult数据集正确率）">
-      <change afterPath="$PROJECT_DIR$/src/cn/qwsin/MissingValues/MissingValueForGeneral.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/qwsin/common/Find.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/工作.txt" afterDir="false" />
+    <list default="true" id="844bbbb2-ba33-4ded-816e-e43cf9779e75" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TestDecisionTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestDecisionTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cn/qwsin/Classify/DecisionTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/qwsin/Classify/DecisionTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/qwsin/Classify/KNN.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/qwsin/Classify/KNN.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/qwsin/MissingValues/MyMissingValues.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/qwsin/MissingValues/MissingValuesForWeka.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/工作.txt" beforeDir="false" afterPath="$PROJECT_DIR$/工作.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,8 +25,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/工作.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+            <state relative-caret-position="364">
+              <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -38,20 +34,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/cn/qwsin/Classify/DecisionTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="444" column="44" lean-forward="true" selection-start-line="444" selection-start-column="44" selection-end-line="444" selection-end-column="44" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/qwsin/MissingValues/MissingValueForGeneral.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1170">
-              <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
+            <state relative-caret-position="513">
+              <caret line="503" column="1" lean-forward="true" selection-start-line="503" selection-start-column="1" selection-end-line="503" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -62,8 +46,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TestDecisionTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="12" column="66" lean-forward="true" selection-start-line="12" selection-start-column="66" selection-end-line="12" selection-end-column="66" />
+            <state relative-caret-position="416">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/qwsin/MissingValues/MissingValueForGeneral.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-19">
+              <caret line="28" column="17" lean-forward="true" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -103,11 +99,11 @@
         <option value="$PROJECT_DIR$/src/cn/qwsin/TestKNN.java" />
         <option value="$PROJECT_DIR$/src/cn/qwsin/FrequentPatternMining/Apriori.java" />
         <option value="$PROJECT_DIR$/src/cn/qwsin/MissingValues/MissingValuesForWeka.java" />
-        <option value="$PROJECT_DIR$/工作.txt" />
         <option value="$PROJECT_DIR$/src/cn/qwsin/common/findMost.java" />
         <option value="$PROJECT_DIR$/src/cn/qwsin/Classify/KNN.java" />
         <option value="$PROJECT_DIR$/src/cn/qwsin/common/Find.java" />
         <option value="$PROJECT_DIR$/src/cn/qwsin/MissingValues/MissingValueForGeneral.java" />
+        <option value="$PROJECT_DIR$/工作.txt" />
         <option value="$PROJECT_DIR$/src/cn/qwsin/Classify/DecisionTree.java" />
         <option value="$PROJECT_DIR$/src/TestDecisionTree.java" />
       </list>
@@ -125,8 +121,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -149,6 +143,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="ProjectViewState">
@@ -244,7 +240,10 @@
       <workItem from="1591064549560" duration="12311000" />
       <workItem from="1591091499647" duration="11589000" />
       <workItem from="1591150936727" duration="7588000" />
-      <workItem from="1591162249524" duration="3860000" />
+      <workItem from="1591162249524" duration="4523000" />
+      <workItem from="1591256717367" duration="12000" />
+      <workItem from="1591256783437" duration="615000" />
+      <workItem from="1591258675381" duration="4345000" />
     </task>
     <task id="LOCAL-00001" summary="对于离散属性的决策树分类算法完成">
       <created>1590982784011</created>
@@ -260,11 +259,18 @@
       <option name="project" value="LOCAL" />
       <updated>1590982809813</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="完成决策树(DecisionTree)的连续值离散化处理/缺失值处理/数据集测试（adult测试数据集正确率81.42%）">
+      <created>1591166156467</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1591166156467</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="114262000" />
+    <option name="totallyTimeSpent" value="119897000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -277,9 +283,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1488" height="878" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4808959" visible="true" weight="0.25995806" />
-      <window_info id="Structure" order="1" sideWeight="0.51910406" side_tool="true" visible="true" weight="0.25995806" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.47694334" visible="true" weight="0.27044025" />
+      <window_info id="Structure" order="1" sideWeight="0.5230566" side_tool="true" visible="true" weight="0.27044025" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -387,7 +394,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="对于离散属性的决策树分类算法完成" />
     <MESSAGE value="完成KNN分类算法" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成KNN分类算法" />
+    <MESSAGE value="完成决策树(DecisionTree)的连续值离散化处理/缺失值处理/数据集测试（adult测试数据集正确率81.42%）" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成决策树(DecisionTree)的连续值离散化处理/缺失值处理/数据集测试（adult测试数据集正确率81.42%）" />
   </component>
   <component name="WindowStateProjectService">
     <state x="242" y="91" key="#com.intellij.execution.impl.EditConfigurationsDialog" />
@@ -495,13 +503,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/工作.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/qwsin/MissingValues/MissingValuesForWeka.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
@@ -526,10 +527,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/工作.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/qwsin/MissingValues/MissingValueForGeneral.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1170">
-          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
+        <state relative-caret-position="-19">
+          <caret line="28" column="17" lean-forward="true" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -538,8 +546,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TestDecisionTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="12" column="66" lean-forward="true" selection-start-line="12" selection-start-column="66" selection-end-line="12" selection-end-column="66" />
+        <state relative-caret-position="416">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -548,8 +556,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/qwsin/Classify/DecisionTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="444" column="44" lean-forward="true" selection-start-line="444" selection-start-column="44" selection-end-line="444" selection-end-column="44" />
+        <state relative-caret-position="513">
+          <caret line="503" column="1" lean-forward="true" selection-start-line="503" selection-start-column="1" selection-end-line="503" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

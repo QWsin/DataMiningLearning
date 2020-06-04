@@ -19,12 +19,16 @@ public class DecisionTree {
 
     private TreeNode root;//保存树根
 
+    //便于选择建树的时候用的方法
+    final public static String ID3="ID3";
+    final public static String CART="CART";
+
     public DecisionTree(){
         records = new HashSet<>();
         idOfLabel = new HashMap<>();
         categoryOfAttr = new HashMap<>();
         dividePoint = new HashMap<>();
-        N = 5;
+        N = 8;
     }
 
     //Record类表示数据集中一条记录
@@ -50,7 +54,6 @@ public class DecisionTree {
             attrValueCont = null;
         }
     }
-
 
     //treeNode类表示Decision tree上的一个结点
     public class TreeNode {
@@ -150,6 +153,21 @@ public class DecisionTree {
         return gain;
     }
 
+    private String findMaxPartition(Set<Record> records, Set<String> attrNames){
+        double maxGain=0;//记录最大信息增益和对应属性名
+        String maxGainName="";
+        //枚举可用属性名称，寻找信息增益最大的那一个
+        for(String attrName : attrNames){
+            double gain= gainPartition(records,attrName);
+            if(gain > maxGain){
+                maxGain=gain;
+                maxGainName=attrName;
+            }
+        }
+        return maxGainName;
+    }
+
+
     //判断是否所有记录都属于同一类别
     private boolean haveSameLabel(Set<Record> records){
         int first=1;
@@ -215,19 +233,54 @@ public class DecisionTree {
         return String.valueOf(N-1);//都没找到就是最后一个区域的
     }
 
+    //计算基尼系数
+    private double Gini(Set<Record> records){
+        Map<String,Integer> count = countLabel(records);
+        double result = 1;
+        for(Map.Entry<String,Integer> entry : count.entrySet()){
+            double tmp = (double)entry.getValue()/records.size();
+            result -= tmp*tmp;
+        }
+        return result;
+    }
+
+    //按照某种属性划分的Gini系数
+    private double Gini(Set<Record> records, String attrName){
+        Map<String,Set<Record>> sets = divByAttr(records, attrName);
+        double result = 0;
+        for(Map.Entry<String,Set<Record>> entry : sets.entrySet()){
+            result += (double)entry.getValue().size()/records.size() * Gini(entry.getValue());
+        }
+        return result;
+    }
+
+    //给定记录和属性，计算嘴笑的基尼指数对应的属性名称
+    private String findMinGini(Set<Record> records, Set<String> attrs){
+        double result = Double.MAX_VALUE;
+        String answer = "";
+        for(String attr : attrs){
+            double cur = Gini(records, attr);
+            if(cur < result){
+                result = cur;
+                answer =attr;
+            }
+        }
+        return answer;
+    }
+
     //判断某种属性是否是连续的
     public boolean isContinuous(String attrName){
         return categoryOfAttr.get(attrName).equals("continuous");
     }
 
     //使用ID3方法建树
-    private TreeNode rootTree_ID3(Set<Record> records,Set<String> attrNames){
+    private TreeNode rootTree(Set<Record> records,Set<String> attrNames, String flag){
         TreeNode root=new TreeNode();
         root.records=records;
         root.attrNames=attrNames;
         //同属一个类别，标记后返回
-        if(haveSameLabel(records)){
-            for(Record record : records) {
+        if(haveSameLabel(records)) {
+            for (Record record : records) {
                 root.label = record.label;
                 return root;
             }
@@ -239,37 +292,37 @@ public class DecisionTree {
             return root;
         }
 
-        double maxGain=0;//记录最大信息增益和对应属性名
-        String maxGainName="";
-        //枚举可用属性名称，寻找信息增益最大的那一个
-        for(String attrName : attrNames){
-            double gain= gainPartition(records,attrName);
-            if(gain > maxGain){
-                maxGain=gain;
-                maxGainName=attrName;
-            }
+        String name;
+        if(flag.equals(ID3)){
+            name = findMaxPartition(records,attrNames);
+        }else if(flag.equals(CART)){
+            name = findMinGini(records,attrNames);
+        }else{
+            System.out.println("建树方式选择错误");
+            return null;
         }
-        if(maxGain == 0){
-            maxGainName = attrNames.stream().findFirst().orElse(maxGainName);
+
+        if(name.equals("")){
+            name = attrNames.stream().findFirst().orElse(name);
         }
-        root.attrName=maxGainName;
+        root.attrName=name;
 
         //构建新的可用属性集合（去除本节点使用的）
         Set<String> newAttrNames = new HashSet<>(attrNames);
-        newAttrNames.remove(maxGainName);
+        newAttrNames.remove(name);
 
         //按照信息增益最大的属性划分集合，并且每一个集合产生一个儿子结点
-        Map<String,Set<Record>> divSets=divByAttr(records,maxGainName);
+        Map<String,Set<Record>> divSets=divByAttr(records,name);
         for(Map.Entry<String,Set<Record>> entry: divSets.entrySet()){
             AttributeField attributeField = new AttributeField();
-            attributeField.name=maxGainName;
-            if(!isContinuous(maxGainName)) {
+            attributeField.name=name;
+            if(!isContinuous(name)) {
                 attributeField.attrValueDisc = entry.getKey();
             }
             else{
                 attributeField.attrValueCont = entry.getKey();
             }
-            root.children.put(attributeField,rootTree_ID3(entry.getValue(),newAttrNames));
+            root.children.put(attributeField,rootTree(entry.getValue(),newAttrNames,flag));
         }
         return root;
     }
@@ -410,9 +463,9 @@ public class DecisionTree {
         }
     }
 
-    public void buildTreeID3(){
+    public void buildTree(String flag){
         Set<String> attrs = new HashSet<>(attributes);
-        root=rootTree_ID3(records,attrs);
+        root=rootTree(records,attrs,flag);
     }
 
     //外部调用的函数，将test数据全部分类

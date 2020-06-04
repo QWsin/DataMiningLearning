@@ -7,6 +7,9 @@ o 完成离散值处理
         o 划分方式：使用中间N-1个点来划分N段，首位点不用（便于处理越过最大最小值的情况）
     o loadTest时的处理
     o 分类时的处理
-完成missingValue
-    提取和KNN重复的代码片段
+o 完成missingValue
+    o 提取和KNN重复的代码片段
 o 去除属性读入时前后空格
+o 完成CART决策树
+    o 计算Gini系数
+    o 完成ROOT_CART
