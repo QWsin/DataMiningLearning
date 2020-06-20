@@ -1,11 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="844bbbb2-ba33-4ded-816e-e43cf9779e75" name="Default Changelist" comment="">
+    <list default="true" id="844bbbb2-ba33-4ded-816e-e43cf9779e75" name="Default Changelist" comment="完成了聚类的Kmeans和DBSCAN算法">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TestDBSCAN.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TestKmeans.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/qwsin/Cluster/DBSCAN.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/qwsin/Cluster/Kmeans.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/qwsin/Cluster/PicUtility.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/qwsin/Normalize/ListArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/qwsin/common/MyMath.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/qwsin/common/readFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/QWsin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/QWsin.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataMiningLearning.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DataMiningLearning.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TestDecisionTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestDecisionTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cn/qwsin/Classify/DecisionTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/qwsin/Classify/DecisionTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/工作.txt" beforeDir="false" afterPath="$PROJECT_DIR$/工作.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/qwsin/Classify/KNN.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/qwsin/Classify/KNN.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/qwsin/FeatureSelection/WekaFeatureSelection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/qwsin/FeatureSelection/Weka.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/qwsin/MissingValues/MissingValueForGeneral.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/qwsin/MissingValues/SetRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/qwsin/MissingValues/MissingValuesForWeka.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/qwsin/MissingValues/Weka.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/qwsin/Normalize/WekaNormalize.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/qwsin/Normalize/Weka.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,43 +41,71 @@
         <entry file="file://$PROJECT_DIR$/工作.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="364">
-              <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+              <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/qwsin/Cluster/Kmeans.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2288">
+              <caret line="96" column="31" selection-start-line="96" selection-start-column="31" selection-end-line="96" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/qwsin/Cluster/DBSCAN.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="283">
+              <caret line="14" column="17" lean-forward="true" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/qwsin/common/MyMath.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="78">
+              <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+              <folding>
+                <element signature="e#378#379#0" expanded="true" />
+                <element signature="e#437#438#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/qwsin/MissingValues/Weka.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="130">
+              <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/cn/qwsin/Classify/DecisionTree.java">
+        <entry file="file://$PROJECT_DIR$/src/cn/qwsin/Normalize/Weka.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="503" column="1" lean-forward="true" selection-start-line="503" selection-start-column="1" selection-end-line="503" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="153">
+              <caret line="17" column="16" lean-forward="true" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/TestDecisionTree.java">
+        <entry file="file://$PROJECT_DIR$/src/TestDBSCAN.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/qwsin/MissingValues/MissingValueForGeneral.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-19">
-              <caret line="28" column="17" lean-forward="true" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="260">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
@@ -82,6 +125,7 @@
       <find>data.size()</find>
       <find>build</find>
       <find>System</find>
+      <find>random</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -102,10 +146,22 @@
         <option value="$PROJECT_DIR$/src/cn/qwsin/common/findMost.java" />
         <option value="$PROJECT_DIR$/src/cn/qwsin/Classify/KNN.java" />
         <option value="$PROJECT_DIR$/src/cn/qwsin/common/Find.java" />
-        <option value="$PROJECT_DIR$/src/cn/qwsin/MissingValues/MissingValueForGeneral.java" />
         <option value="$PROJECT_DIR$/工作.txt" />
+        <option value="$PROJECT_DIR$/src/cn/qwsin/Classify/RandomForest.java" />
         <option value="$PROJECT_DIR$/src/cn/qwsin/Classify/DecisionTree.java" />
         <option value="$PROJECT_DIR$/src/TestDecisionTree.java" />
+        <option value="$PROJECT_DIR$/src/cn/qwsin/MissingValues/MissingValueForGeneral.java" />
+        <option value="$PROJECT_DIR$/src/cn/qwsin/MissingValues/MissingValueForSetRecord.java" />
+        <option value="$PROJECT_DIR$/src/cn/qwsin/Normalize/listArray.java" />
+        <option value="$PROJECT_DIR$/src/cn/qwsin/Normalize/ListArray.java" />
+        <option value="$PROJECT_DIR$/src/TestKmeans.java" />
+        <option value="$PROJECT_DIR$/src/cn/qwsin/Cluster/PicUtility.java" />
+        <option value="$PROJECT_DIR$/src/cn/qwsin/common/readFile.java" />
+        <option value="$PROJECT_DIR$/src/cn/qwsin/common/MyMath.java" />
+        <option value="$PROJECT_DIR$/src/cn/qwsin/Cluster/Kmeans.java" />
+        <option value="$PROJECT_DIR$/src/TestDBSCAN.java" />
+        <option value="$PROJECT_DIR$/src/cn/qwsin/Cluster/DBSCAN.java" />
+        <option value="$PROJECT_DIR$/src/cn/qwsin/Normalize/Weka.java" />
       </list>
     </option>
   </component>
@@ -121,6 +177,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -139,11 +196,63 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="qwsin" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="DataMiningLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataMiningLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="qwsin" type="462c0819:PsiDirectoryNode" />
+              <item name="Cluster" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataMiningLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataMiningLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="qwsin" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataMiningLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataMiningLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="qwsin" type="462c0819:PsiDirectoryNode" />
+              <item name="FeatureSelection" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataMiningLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataMiningLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="qwsin" type="462c0819:PsiDirectoryNode" />
+              <item name="FrequentPatternMining" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataMiningLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataMiningLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="qwsin" type="462c0819:PsiDirectoryNode" />
+              <item name="InstanceOutput" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataMiningLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataMiningLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="qwsin" type="462c0819:PsiDirectoryNode" />
+              <item name="MissingValues" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataMiningLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataMiningLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="qwsin" type="462c0819:PsiDirectoryNode" />
+              <item name="Normalize" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataMiningLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -158,13 +267,13 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../A+B_problem" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../HelloWolrd" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.gutterIcons" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -178,23 +287,24 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TestDecisionTree">
-    <configuration name="TestDecisionTree" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="TestDecisionTree" />
+  <component name="RunManager" selected="Application.TestDBSCAN">
+    <configuration name="TestDBSCAN" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="TestDBSCAN" />
       <module name="DataMiningLearning" />
+      <option name="VM_PARAMETERS" value="-Dfile.encoding=utf-8" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="WekaFeatureSelection" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="cn.qwsin.FeatureSelection.WekaFeatureSelection" />
+      <option name="MAIN_CLASS_NAME" value="cn.qwsin.FeatureSelection.Weka" />
       <module name="DataMiningLearning" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="myMissingValues" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="cn.qwsin.MissingValues.MissingValuesForWeka" />
+      <option name="MAIN_CLASS_NAME" value="cn.qwsin.MissingValues.Weka" />
       <module name="DataMiningLearning" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -202,9 +312,13 @@
     </configuration>
     <list>
       <item itemvalue="Application.WekaFeatureSelection" />
-      <item itemvalue="Application.TestDecisionTree" />
+      <item itemvalue="Application.TestDBSCAN" />
       <item itemvalue="Application.myMissingValues" />
     </list>
+  </component>
+  <component name="StructureViewFactory">
+    <option name="AUTOSCROLL_MODE" value="false" />
+    <option name="ACTIVE_ACTIONS" value=",ALPHA_COMPARATOR" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -243,7 +357,15 @@
       <workItem from="1591162249524" duration="4523000" />
       <workItem from="1591256717367" duration="12000" />
       <workItem from="1591256783437" duration="615000" />
-      <workItem from="1591258675381" duration="4345000" />
+      <workItem from="1591258675381" duration="20334000" />
+      <workItem from="1592307977843" duration="5722000" />
+      <workItem from="1592396675361" duration="2430000" />
+      <workItem from="1592399772539" duration="1303000" />
+      <workItem from="1592403117888" duration="807000" />
+      <workItem from="1592403977304" duration="870000" />
+      <workItem from="1592571503720" duration="4240000" />
+      <workItem from="1592622231530" duration="2894000" />
+      <workItem from="1592653450699" duration="469000" />
     </task>
     <task id="LOCAL-00001" summary="对于离散属性的决策树分类算法完成">
       <created>1590982784011</created>
@@ -266,11 +388,18 @@
       <option name="project" value="LOCAL" />
       <updated>1591166156467</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="添加了CART构建决策树的方法">
+      <created>1591263538525</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1591263538525</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="119897000" />
+    <option name="totallyTimeSpent" value="154621000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -285,8 +414,8 @@
     <frame x="-7" y="-7" width="1488" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.47694334" visible="true" weight="0.27044025" />
-      <window_info id="Structure" order="1" sideWeight="0.5230566" side_tool="true" visible="true" weight="0.27044025" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4756258" visible="true" weight="0.26974145" />
+      <window_info id="Structure" order="1" sideWeight="0.5236842" side_tool="true" weight="0.2739343" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -294,8 +423,8 @@
       <window_info id="Favorites" order="6" sideWeight="0.50065875" side_tool="true" weight="0.2494759" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32938075" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.5322793" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3992095" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.45322794" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.49011856" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32806325" />
@@ -304,7 +433,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32806325" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32806325" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32806325" />
+      <window_info active="true" anchor="bottom" id="Messages" order="12" visible="true" weight="0.32806325" />
       <window_info anchor="bottom" id="Duplicates" order="13" weight="0.32806325" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -317,26 +446,27 @@
       <window_info anchor="right" id="Database" order="8" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49934125" visible="true" weight="0.256464" />
-      <window_info id="Structure" order="1" sideWeight="0.50065875" side_tool="true" weight="0.2494759" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4756258" visible="true" weight="0.2662474" />
+      <window_info id="Structure" order="1" sideWeight="0.5236842" side_tool="true" weight="0.2739343" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" sideWeight="0.50065875" side_tool="true" weight="0.2494759" />
-      <window_info anchor="bottom" id="Messages" order="0" weight="0.32938075" />
-      <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.32938075" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="7" weight="0.32806325" />
-      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32806325" />
-      <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" />
-      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" weight="0.32806325" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32938075" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.45322794" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.49011856" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32806325" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32674572" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32806325" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32806325" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32806325" />
+      <window_info anchor="bottom" id="Duplicates" order="13" weight="0.32806325" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -395,7 +525,9 @@
     <MESSAGE value="对于离散属性的决策树分类算法完成" />
     <MESSAGE value="完成KNN分类算法" />
     <MESSAGE value="完成决策树(DecisionTree)的连续值离散化处理/缺失值处理/数据集测试（adult测试数据集正确率81.42%）" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成决策树(DecisionTree)的连续值离散化处理/缺失值处理/数据集测试（adult测试数据集正确率81.42%）" />
+    <MESSAGE value="添加了CART构建决策树的方法" />
+    <MESSAGE value="完成了聚类的Kmeans和DBSCAN算法" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成了聚类的Kmeans和DBSCAN算法" />
   </component>
   <component name="WindowStateProjectService">
     <state x="242" y="91" key="#com.intellij.execution.impl.EditConfigurationsDialog" />
@@ -431,21 +563,19 @@
         <watch expression="items_s" />
         <watch expression="((HashMap)divSets).entrySet().toArray()[1]" custom="java.util.HashMap" />
         <watch expression="divSets" />
+        <watch expression="divide" />
+        <watch expression="((HashSet)((HashMap.Node)entry).getValue()).toArray()[1]" custom="java.util.HashMap.Node,java.util.HashSet" />
+        <watch expression="records" />
+        <watch expression="records.toArray()[2]" />
+        <watch expression="root" />
       </configuration>
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/FeatureSelection/WekaFeatureSelection.java">
+    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/FeatureSelection/Weka.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
           <caret line="13" column="44" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/Normalize/WekaNormalize.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="11" column="31" lean-forward="true" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -503,17 +633,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/MissingValues/MissingValuesForWeka.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/qwsin/Classify/KNN.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="562">
           <caret line="104" column="36" lean-forward="true" selection-start-line="104" selection-start-column="36" selection-end-line="104" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/Classify/RandomForest.java" />
+    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/Classify/DecisionTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TestDecisionTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/MissingValues/SetRecord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -527,42 +681,168 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/util/PicUtility.java" />
+    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/common/readFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/Cluster/PicUtility.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TestKmeans.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/Normalize/ListArray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/工作.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="364">
-          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/MissingValues/MissingValueForGeneral.java">
+    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/Cluster/Kmeans.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-19">
-          <caret line="28" column="17" lean-forward="true" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
+        <state relative-caret-position="2288">
+          <caret line="96" column="31" selection-start-line="96" selection-start-column="31" selection-end-line="96" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TestDecisionTree.java">
+    <entry file="file://$PROJECT_DIR$/src/TestDBSCAN.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="260">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/Cluster/DBSCAN.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="14" column="17" lean-forward="true" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/Classify/DecisionTree.java">
+    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/common/MyMath.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="503" column="1" lean-forward="true" selection-start-line="503" selection-start-column="1" selection-end-line="503" selection-end-column="1" />
+        <state relative-caret-position="78">
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#378#379#0" expanded="true" />
+            <element signature="e#437#438#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/MissingValues/Weka.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/Normalize/Weka.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="17" column="16" lean-forward="true" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>DataMiningLearning</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

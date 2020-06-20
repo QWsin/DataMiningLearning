@@ -9,7 +9,7 @@ import weka.core.converters.ConverterUtils;
 import weka.filters.Filter;
 import weka.filters.supervised.attribute.AttributeSelection;
 
-public class WekaFeatureSelection {
+public class Weka {
     //instances待处理数据集，k是筛选的特征数量
     public static Instances featureSelection(Instances instances, int k) throws Exception {
         AttributeSelection as = new AttributeSelection();

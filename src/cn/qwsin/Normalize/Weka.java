@@ -5,12 +5,11 @@ import weka.core.Instances;
 import weka.core.converters.ConverterUtils.DataSource;
 import weka.filters.Filter;
 
-public class WekaNormalize {
+public class Weka {
     public static Instances normalize(Instances instances) throws Exception {
         weka.filters.unsupervised.attribute.Normalize norm = new weka.filters.unsupervised.attribute.Normalize();//建立一个归一化filter
         norm.setInputFormat(instances);//为filter导入数据
-        Instances newInstances = Filter.useFilter(instances, norm);//得到归一化后的数据
-        return newInstances;
+        return Filter.useFilter(instances, norm);
     }
     public static void main(String[] args) throws Exception {
         Output output = new Output();

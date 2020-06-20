@@ -8,7 +8,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
-public class MissingValueForGeneral {
+public class SetRecord {
     public static void fillMissing(Set<DecisionTree.Record> records, ArrayList<String> attributes, DecisionTree tree){
         for (String name : attributes) {
             if (tree.isContinuous(name)) {

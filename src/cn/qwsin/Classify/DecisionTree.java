@@ -1,23 +1,28 @@
 package cn.qwsin.Classify;
 
+import cn.qwsin.common.Find;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.util.*;
 
-import static cn.qwsin.MissingValues.MissingValueForGeneral.fillMissing;
+import static cn.qwsin.MissingValues.SetRecord.fillMissing;
 
 public class DecisionTree {
 
     private Set<Record> records;//保存记录
     private ArrayList<String> attributes;//保存属性
+    private Set<String> attributesSet;//set形式的属性，有的地方会用到
     private Map<String,Integer> idOfLabel;//记录某种属性对应的编号
     private Map<String,String> categoryOfAttr;//标记某种属性连续or离散
     private Map<String,ArrayList<Double>> dividePoint;//标记连续属性的分界点
     private String[] Labels;//记录属性名
     private int N;//表示连续属性统一划分为多少段
+    private Random random;
 
     private TreeNode root;//保存树根
+    private ArrayList<TreeNode> forest;//保存随机森林树根
 
     //便于选择建树的时候用的方法
     final public static String ID3="ID3";
@@ -28,6 +33,9 @@ public class DecisionTree {
         idOfLabel = new HashMap<>();
         categoryOfAttr = new HashMap<>();
         dividePoint = new HashMap<>();
+        attributesSet = new HashSet<>();
+        forest = new ArrayList<>();
+        random = new Random();
         N = 8;
     }
 
@@ -60,7 +68,6 @@ public class DecisionTree {
         Map<AttributeField, TreeNode> children;//存储儿子节点
         String attrName;//该节点往下分割时使用的属性名称
         Set<Record> records;//该节点包含的记录数
-        Set<String> attrNames;//该节点包含的属性名称
         String label;//叶子节点的属性标识
         TreeNode(){
             children = new HashMap<>();
@@ -171,13 +178,13 @@ public class DecisionTree {
     //判断是否所有记录都属于同一类别
     private boolean haveSameLabel(Set<Record> records){
         int first=1;
-        Record tmp = null;
+        String tmp = null;
         for(Record record : records){
             if(first == 1){
-                tmp=record;
+                tmp=record.label;
                 first=0;
             }else{
-                if(record!=tmp) return false;
+                if(!record.label.equals(tmp)) return false;
             }
         }
         return true;
@@ -187,7 +194,7 @@ public class DecisionTree {
     private boolean haveSameValue(Set<Record> records, Set<String> attrNames){
         int first=1;
         Record tmp=null;
-        for(Record record: records){
+        for(Record record : records){
             if(first==1){
                 //取第一个作为参照
                 first=0;
@@ -196,10 +203,7 @@ public class DecisionTree {
             else{
                 //遍历属性，判断是否都一样，只要有一个不同就不满足条件（只有一条记录时一定满足条件）
                 for(String attr : attrNames) {
-                    if (!isContinuous(attr) && !record.attrDisc.get(attr).equals(tmp.attrDisc.get(attr))){
-                        return false;
-                    }
-                    else if(isContinuous(attr) && !record.attrCont.get(attr).equals(tmp.attrCont.get(attr))){
+                    if(!getValue(attr,tmp).equals(getValue(attr,record))){
                         return false;
                     }
                 }
@@ -210,16 +214,8 @@ public class DecisionTree {
 
     //找出records中出现次数最多的label，有多个label出现次数一样多时，随机返回一个
     private String findTheMostLabel(Set<Record> records){
-        Map<String,Integer> vis = countLabel(records);
-        int maxNum=0;
-        String maxNumLabel=null;
-        for(Map.Entry<String, Integer> entry : vis.entrySet()){
-            if(entry.getValue() > maxNum){
-                maxNum=entry.getValue();
-                maxNumLabel=entry.getKey();
-            }
-        }
-        return maxNumLabel;
+//        Map<String,Integer> vis = ;
+        return Find.findMost(countLabel(records));
     }
 
     //获取连续属性的值，从0开始标号
@@ -231,6 +227,15 @@ public class DecisionTree {
             }
         }
         return String.valueOf(N-1);//都没找到就是最后一个区域的
+    }
+
+    //快速获取某一个记录的某个属性值，免去判断离散或连续
+    private String getValue(String attrName, Record record){
+        if(isContinuous(attrName)){
+            return getContValue(attrName,record.attrCont.get(attrName));
+        }else{
+            return record.attrDisc.get(attrName);
+        }
     }
 
     //计算基尼系数
@@ -246,15 +251,26 @@ public class DecisionTree {
 
     //按照某种属性划分的Gini系数
     private double Gini(Set<Record> records, String attrName){
-        Map<String,Set<Record>> sets = divByAttr(records, attrName);
-        double result = 0;
-        for(Map.Entry<String,Set<Record>> entry : sets.entrySet()){
-            result += (double)entry.getValue().size()/records.size() * Gini(entry.getValue());
+        double result = Double.MAX_VALUE;
+        Set<String> v = new HashSet<>();//记录所有可能的值
+        for(Record record : records){
+            v.add(getValue(attrName,record));
+        }
+
+        for(String s : v){
+            Set<Record> tmp = new HashSet<>();
+            Set<Record> left = new HashSet<>();
+            for(Record record : records){
+                String value = getValue(attrName,record);
+                if(value.equals(s)) tmp.add(record);
+                else left.add(record);
+            }
+            result = Math.min(result,(double)tmp.size()/records.size()*Gini(tmp)+(double)left.size()/records.size()*Gini(left));
         }
         return result;
     }
 
-    //给定记录和属性，计算嘴笑的基尼指数对应的属性名称
+    //给定记录和属性，计算最小的基尼指数对应的属性名称
     private String findMinGini(Set<Record> records, Set<String> attrs){
         double result = Double.MAX_VALUE;
         String answer = "";
@@ -262,22 +278,37 @@ public class DecisionTree {
             double cur = Gini(records, attr);
             if(cur < result){
                 result = cur;
-                answer =attr;
+                answer = attr;
             }
         }
         return answer;
     }
+
+    //从一个列表里随机选出m个元素
+    private Set<String> randomChoose(ArrayList<String> set,int m){
+        Set<String> result = new HashSet<>();
+        Set<Integer> vis = new HashSet<>();
+        for(int i=0;i<m;++i){
+            int pos = random.nextInt(set.size());
+            while(vis.contains(pos)){
+                pos = random.nextInt(set.size());
+            }
+            vis.add(pos);
+            result.add(set.get(pos));
+        }
+        return result;
+    }
+
 
     //判断某种属性是否是连续的
     public boolean isContinuous(String attrName){
         return categoryOfAttr.get(attrName).equals("continuous");
     }
 
-    //使用ID3方法建树
+    //建单独的树
     private TreeNode rootTree(Set<Record> records,Set<String> attrNames, String flag){
         TreeNode root=new TreeNode();
         root.records=records;
-        root.attrNames=attrNames;
         //同属一个类别，标记后返回
         if(haveSameLabel(records)) {
             for (Record record : records) {
@@ -326,6 +357,47 @@ public class DecisionTree {
         }
         return root;
     }
+
+    //构建随机森林
+    private TreeNode rootForest(Set<Record> records,int m){
+        TreeNode root=new TreeNode();
+        root.records=records;
+        //同属一个类别，标记后返回
+        if(haveSameLabel(records)) {
+            for (Record record : records) {
+                root.label = record.label;
+                return root;
+            }
+        }
+        Set<String> chosen = randomChoose(attributes,m);
+
+        //所有记录在随机选择的属性都有相同的值
+        if(haveSameValue(records,chosen)){
+            root.label=findTheMostLabel(records);
+            return root;
+        }
+
+        root.attrName = findMinGini(records,chosen);
+        if(root.attrName.equals("")){
+            int stop=1;
+        }
+        Map<String,Set<Record>> divSets=divByAttr(records,root.attrName);
+
+        //和普通建树一样的划分过程
+        for(Map.Entry<String,Set<Record>> entry: divSets.entrySet()){
+            AttributeField attributeField = new AttributeField();
+            attributeField.name=root.attrName;
+            if(!isContinuous(root.attrName)) {
+                attributeField.attrValueDisc = entry.getKey();
+            }
+            else{
+                attributeField.attrValueCont = entry.getKey();
+            }
+            root.children.put(attributeField,rootForest(entry.getValue(),m));
+        }
+        return root;
+    }
+
 
     //对一条新记录预测其分类
     private String classify(TreeNode root,Record record){
@@ -414,6 +486,7 @@ public class DecisionTree {
                 }
                 else categoryOfAttr.put(name,"discrete");//标记为离散，具体值忽略
             }
+            attributesSet = new HashSet<>(attributes);
 
             int cnt=0;
             while((s = br.readLine())!=null){//读取属性值
@@ -424,7 +497,7 @@ public class DecisionTree {
                     if(entry.getValue()==Double.MAX_VALUE) continue;//略过缺失值
                     if(minV.containsKey(entry.getKey())){
                         minV.put(entry.getKey(),Math.min(minV.get(entry.getKey()),entry.getValue()));
-                        maxV.put(entry.getKey(),Math.max(minV.get(entry.getKey()),entry.getValue()));
+                        maxV.put(entry.getKey(),Math.max(maxV.get(entry.getKey()),entry.getValue()));
                     }else{
                         minV.put(entry.getKey(),entry.getValue());
                         maxV.put(entry.getKey(),entry.getValue());
@@ -456,16 +529,46 @@ public class DecisionTree {
             double m=entry.getValue();//该属性最小值
             double M=maxV.get(entry.getKey());//该属性最大值
             ArrayList<Double> divide = new ArrayList<>();
-            for(int i=0;i<N;++i){//N+1个点划分
-                divide.add((m*(N-i)+M*N)/N);
+            for(int i=0;i<=N;++i){//N+1个点划分
+                divide.add((m*(N-i)+M*i)/N);
             }
             dividePoint.put(entry.getKey(),divide);
         }
     }
 
     public void buildTree(String flag){
-        Set<String> attrs = new HashSet<>(attributes);
-        root=rootTree(records,attrs,flag);
+        root=rootTree(records,attributesSet,flag);
+    }
+
+    //k:要构造多少颗树,m:随机抽取多少个属性
+    public void buildRandomForest(int k,int m){
+        for(int i=0;i<k;++i){
+            Set<Record> recordSet = new HashSet<>();
+            ArrayList<Record> tmp = new ArrayList<>(records);
+            for(int j=0;j<records.size();++j)
+                recordSet.add(tmp.get(random.nextInt(records.size())));
+            forest.add(rootForest(recordSet,m));
+            System.out.println(i+"-th tree is built.");
+        }
+    }
+
+    //给测试数据投票
+    public Set<Record> voteTest(Set<Record> testRecords){
+        Set<Record> result = new HashSet<>(testRecords);
+        for(Record record : result){
+            Map<String,Integer> count = new HashMap<>();
+            for (TreeNode treeNode : forest) {
+                String label = classify(treeNode, record);
+                if (count.containsKey(label)) {
+                    int tmp = count.get(label);
+                    count.put(label, tmp + 1);
+                } else {
+                    count.put(label, 1);
+                }
+            }
+            record.label = Find.findMost(count);
+        }
+        return result;
     }
 
     //外部调用的函数，将test数据全部分类
