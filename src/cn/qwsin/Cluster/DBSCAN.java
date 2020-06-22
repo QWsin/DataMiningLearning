@@ -58,7 +58,7 @@ public class DBSCAN {
         for(int i=0;i<data.size();++i){//枚举每个点
             Dpoint dp1 = data.get(i);
             dp1.neighbor.add(dp1.v);//自己放进自己的neighbor
-            for(int j=0;j<data.size();++j) if(i!=j){
+            for(int j=0;j<data.size();++j) if(i!=j){//枚举其他的点，检查是否在范围内
                 Dpoint dp2 = data.get(j);
                 if(MyMath.getDistance(dp1.v,dp2.v,dim) <= e){
                     dp1.neighbor.add(dp2.v);//加入集合
@@ -67,7 +67,7 @@ public class DBSCAN {
         }
 
         int[] p = new int[data.size()];
-        for(int i=0;i<data.size();++i) p[i]=i;
+        for(int i=0;i<data.size();++i) p[i]=i;//初始化并查集
 
         for(int i=0;i<data.size();++i) if(data.get(i).isKey()){
             for(int j=0;j<data.size();++j)

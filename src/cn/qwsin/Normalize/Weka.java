@@ -19,7 +19,7 @@ public class Weka {
         Instances instances = source.getDataSet();//导入数据
 
         output.printStep("归一化处理..");
-        Instances newInstances= normalize(instances);
+        Instances newInstances= normalize(instances);//调用weka的归一化处理
 
         output.printStep("打印结果");
         output.printAttribute(newInstances);

@@ -152,19 +152,20 @@ public class Apriori {
     }
     */
 
-    //由k-1项频繁模式连接出k项，并检测是否满足支持度要求
+    //由k-1项频繁模式连接出k项，同时检测是否满足支持度要求，返回满足的频繁项集集合
     private Set<Set<String>> connectCheck(Set<Set<String>> curFP, int k){
 //        if(k<6) fillBucket(k);（该函数未完成）
         Set<Set<String>> res = new HashSet<>();
-        for (Set<String> set1 : curFP) {
+        for (Set<String> set1 : curFP) {//枚举两个频繁项集
             for (Set<String> set2 : curFP) {
-                if (set1.equals(set2)) continue;
+                if (set1.equals(set2)) continue;//相同则跳过
                 Set<String> items = new HashSet<>(set1);
                 items.retainAll(set2);//求两集合交
                 if (items.size() < k-2) continue;
 
                 items.addAll(set1);//求两集合并
                 items.addAll(set2);
+                //检测连接出的项，是否每个大小为k的子集都在k项频繁模式里，以及支持度是否大于阈值
                 if (check(items, curFP) && getSupport(items)>=minSup)
                     res.add(items);
             }
@@ -201,13 +202,13 @@ public class Apriori {
         for(int k=2;k<=N;++k)
         {
             System.out.println("当前事务集大小:"+data.size());
-            fp_cur= connectCheck(fp_cur,k);
+            fp_cur= connectCheck(fp_cur,k);//连接k项集并且检验得到合法k+1项集
             if(fp_cur.isEmpty()) break;
             simplifyData(fp_cur);//删除没有k项频繁模式的事务集
-            FP.put(k,fp_cur);
+            FP.put(k,fp_cur);//加入长度为k的频繁模式记录集中
         }
 
-        printAllFP();
+        printAllFP();//打印频繁模式
     }
 
     //寻找频繁模式之后，找出强关联规则
@@ -222,13 +223,13 @@ public class Apriori {
 
                 for(int S=(1<<items.size())-2;S>=1;--S){//使用2进制进行子集枚举
                     Set<String> A = new HashSet<>();
-                    for(int i=0;i<items.size();++i) {
+                    for(int i=0;i<items.size();++i) {//把枚举到的集合取出
                         if ((S & (1 << i)) != 0) A.add(items_s[i]);
                     }
                     float conf=(float) sup.get(items) / sup.get(A);
-                    if(conf > minConf){
+                    if(conf > minConf){//满足置信度要求，则加入结果中
                         items.removeAll(A);//求一下差集
-//                        System.out.println("Put in"+A+" "+items);
+                        //检查是否包含该集合为key的元素，两种情况下加入方式略有不同
                         if(associatedRules.containsKey(A)){
                             Set<String> newItems = new HashSet<>(items);
                             associatedRules.get(A).add(newItems);

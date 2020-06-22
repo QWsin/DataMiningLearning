@@ -17,11 +17,11 @@ public class Weka {
         ranker.setThreshold(0.0);//筛选大于某个值的特征
         ranker.setNumToSelect(k-1);//选几个特征,最终选出来的等于参数+1个
 
-        ASEvaluation ae= new InfoGainAttributeEval();
-        as.setEvaluator(ae);
-        as.setSearch(ranker);
-        as.setInputFormat(instances);
-        return Filter.useFilter(instances, as);
+        ASEvaluation ae= new InfoGainAttributeEval();//使用信息增益来评价
+        as.setEvaluator(ae);//设置评价方式
+        as.setSearch(ranker);//设置筛选几个特征等
+        as.setInputFormat(instances);//输入
+        return Filter.useFilter(instances, as);//返回结果
     }
 
     public static void main(String[] args) throws Exception {
