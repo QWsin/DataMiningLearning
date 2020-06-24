@@ -4,6 +4,7 @@
       <w>apriori</w>
       <w>dpoint</w>
       <w>gini</w>
+      <w>unif</w>
     </words>
   </dictionary>
 </component>

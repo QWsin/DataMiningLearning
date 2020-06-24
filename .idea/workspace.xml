@@ -2,15 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="844bbbb2-ba33-4ded-816e-e43cf9779e75" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/cn/qwsin/Graph/Graph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/qwsin/SortVertex/Degree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/qwsin/SortVertex/Probability.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/qwsin/SortVertex/comentropy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/qwsin/SpreadSimulation/SIR.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/qwsin/common/Count.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dictionaries/QWsin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/QWsin.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TestDecisionTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestDecisionTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/qwsin/Classify/DecisionTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/qwsin/Classify/DecisionTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/qwsin/Classify/KNN.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/qwsin/Classify/KNN.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/qwsin/Cluster/DBSCAN.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/qwsin/Cluster/DBSCAN.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/qwsin/FeatureSelection/Weka.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/qwsin/FeatureSelection/Weka.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/qwsin/FrequentPatternMining/Apriori.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/qwsin/FrequentPatternMining/Apriori.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/qwsin/Normalize/Weka.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/qwsin/Normalize/Weka.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/qwsin/common/MyMath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/qwsin/common/MyMath.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/工作.txt" beforeDir="false" afterPath="$PROJECT_DIR$/工作.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -28,57 +28,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/工作.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="520">
-              <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+            <state relative-caret-position="421">
+              <caret line="23" column="2" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/qwsin/Classify/DecisionTree.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8554">
-              <caret line="483" column="23" selection-start-line="483" selection-start-column="23" selection-end-line="483" selection-end-column="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2328#3183#0" />
-                <element signature="e#3189#3653#0" />
-                <element signature="e#3659#4055#0" />
-                <element signature="e#4061#5000#0" />
-                <element signature="e#5580#6006#0" />
-                <element signature="e#6012#6451#0" />
-                <element signature="e#6458#6834#0" />
-                <element signature="e#6840#7475#0" />
-                <element signature="e#7481#7682#0" />
-                <element signature="e#7688#8036#0" />
-                <element signature="e#8042#8320#0" />
-                <element signature="e#8326#8665#0" />
-                <element signature="e#10126#10584#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/TestDecisionTree.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/qwsin/Cluster/Kmeans.java">
+        <entry file="file://$PROJECT_DIR$/src/cn/qwsin/SortVertex/comentropy.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="858">
-              <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="109" selection-end-column="5" />
+              <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -87,10 +50,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/qwsin/Cluster/DBSCAN.java">
+        <entry file="file://$PROJECT_DIR$/src/cn/qwsin/SortVertex/Probability.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1300">
-              <caret line="56" column="4" selection-start-line="56" selection-start-column="4" selection-end-line="98" selection-end-column="5" />
+            <state relative-caret-position="1066">
+              <caret line="41" column="16" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/cn/qwsin/SortVertex/Degree.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1066">
+              <caret line="86" column="5" lean-forward="true" selection-start-line="86" selection-start-column="5" selection-end-line="86" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -99,10 +74,24 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/qwsin/Classify/KNN.java">
+        <entry file="file://$PROJECT_DIR$/src/cn/qwsin/common/MyMath.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
-              <caret line="84" column="34" selection-start-line="84" selection-start-column="34" selection-end-line="84" selection-end-column="34" />
+            <state relative-caret-position="565">
+              <caret line="45" column="18" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1551#1552#0" expanded="true" />
+                <element signature="e#1577#1578#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/qwsin/common/Count.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="416">
+              <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -111,10 +100,25 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/TestDBSCAN.java">
+        <entry file="file://$PROJECT_DIR$/src/cn/qwsin/SpreadSimulation/SIR.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="1040">
+              <caret line="67" column="16" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/qwsin/Graph/Graph.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="39" column="44" selection-start-line="39" selection-start-column="44" selection-end-line="39" selection-end-column="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -161,7 +165,6 @@
         <option value="$PROJECT_DIR$/src/TestKmeans.java" />
         <option value="$PROJECT_DIR$/src/cn/qwsin/Cluster/PicUtility.java" />
         <option value="$PROJECT_DIR$/src/cn/qwsin/common/readFile.java" />
-        <option value="$PROJECT_DIR$/src/cn/qwsin/common/MyMath.java" />
         <option value="$PROJECT_DIR$/src/cn/qwsin/Cluster/Kmeans.java" />
         <option value="$PROJECT_DIR$/src/TestDBSCAN.java" />
         <option value="$PROJECT_DIR$/src/cn/qwsin/Normalize/Weka.java" />
@@ -171,7 +174,14 @@
         <option value="$PROJECT_DIR$/src/cn/qwsin/Classify/DecisionTree.java" />
         <option value="$PROJECT_DIR$/src/TestDecisionTree.java" />
         <option value="$PROJECT_DIR$/src/cn/qwsin/Cluster/DBSCAN.java" />
+        <option value="$PROJECT_DIR$/src/cn/qwsin/common/Count.java" />
+        <option value="$PROJECT_DIR$/src/cn/qwsin/SpreadSimulation/SIR.java" />
+        <option value="$PROJECT_DIR$/src/cn/qwsin/Graph/Graph.java" />
+        <option value="$PROJECT_DIR$/src/cn/qwsin/SortVertex/Probability.java" />
+        <option value="$PROJECT_DIR$/src/cn/qwsin/common/MyMath.java" />
+        <option value="$PROJECT_DIR$/src/cn/qwsin/SortVertex/comentropy.java" />
         <option value="$PROJECT_DIR$/工作.txt" />
+        <option value="$PROJECT_DIR$/src/cn/qwsin/SortVertex/Degree.java" />
       </list>
     </option>
   </component>
@@ -187,6 +197,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -245,6 +257,13 @@
               <item name="DataMiningLearning" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="qwsin" type="462c0819:PsiDirectoryNode" />
+              <item name="Graph" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataMiningLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataMiningLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="qwsin" type="462c0819:PsiDirectoryNode" />
               <item name="InstanceOutput" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -263,14 +282,26 @@
             </path>
             <path>
               <item name="DataMiningLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataMiningLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="qwsin" type="462c0819:PsiDirectoryNode" />
+              <item name="SortVertex" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataMiningLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataMiningLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="qwsin" type="462c0819:PsiDirectoryNode" />
+              <item name="SpreadSimulation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataMiningLearning" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="ProjectViewState">
@@ -388,6 +419,10 @@
       <workItem from="1592829098965" duration="1772000" />
       <workItem from="1592832383467" duration="2703000" />
       <workItem from="1592836709639" duration="29000" />
+      <workItem from="1592836782639" duration="115000" />
+      <workItem from="1592911027645" duration="6406000" />
+      <workItem from="1592967216965" duration="4243000" />
+      <workItem from="1592997691442" duration="9527000" />
     </task>
     <task id="LOCAL-00001" summary="对于离散属性的决策树分类算法完成">
       <created>1590982784011</created>
@@ -424,11 +459,18 @@
       <option name="project" value="LOCAL" />
       <updated>1592653967767</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="修改CART建树（之前算法错了），添加若干注释">
+      <created>1592836825979</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1592836825979</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="178546000" />
+    <option name="totallyTimeSpent" value="198837000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -442,7 +484,7 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1488" height="878" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.47167325" visible="true" weight="0.2494759" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.47167325" visible="true" weight="0.26345214" />
       <window_info id="Structure" order="1" sideWeight="0.5276316" side_tool="true" weight="0.24248777" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -555,7 +597,8 @@
     <MESSAGE value="完成决策树(DecisionTree)的连续值离散化处理/缺失值处理/数据集测试（adult测试数据集正确率81.42%）" />
     <MESSAGE value="添加了CART构建决策树的方法" />
     <MESSAGE value="完成了聚类的Kmeans和DBSCAN算法" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成了聚类的Kmeans和DBSCAN算法" />
+    <MESSAGE value="修改CART建树（之前算法错了），添加若干注释" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改CART建树（之前算法错了），添加若干注释" />
   </component>
   <component name="WindowStateProjectService">
     <state x="242" y="91" key="#com.intellij.execution.impl.EditConfigurationsDialog" />
@@ -686,17 +729,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/common/MyMath.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-          <folding>
-            <element signature="e#378#379#0" expanded="true" />
-            <element signature="e#437#438#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_241/src.zip!/java/util/Map.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="244">
@@ -759,9 +791,56 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/Cluster/Kmeans.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="858">
+          <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="109" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/Cluster/DBSCAN.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1300">
+          <caret line="56" column="4" selection-start-line="56" selection-start-column="4" selection-end-line="98" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/Classify/KNN.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2002">
+          <caret line="84" column="34" selection-start-line="84" selection-start-column="34" selection-end-line="84" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TestDBSCAN.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <caret column="21" lean-forward="true" selection-start-column="21" selection-end-column="21" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/qwsin/Classify/DecisionTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8554">
+        <state relative-caret-position="657">
           <caret line="483" column="23" selection-start-line="483" selection-start-column="23" selection-end-line="483" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -784,7 +863,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TestDecisionTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
+        <state relative-caret-position="494">
           <caret line="19" selection-start-line="19" selection-end-line="19" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -792,47 +871,82 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/Cluster/Kmeans.java">
+    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/common/Count.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="858">
-          <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="109" selection-end-column="5" />
+        <state relative-caret-position="416">
+          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/Cluster/DBSCAN.java">
+    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/SpreadSimulation/SIR.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1300">
-          <caret line="56" column="4" selection-start-line="56" selection-start-column="4" selection-end-line="98" selection-end-column="5" />
+        <state relative-caret-position="1040">
+          <caret line="67" column="16" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TestDBSCAN.java">
+    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/Graph/Graph.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="312">
+          <caret line="39" column="44" selection-start-line="39" selection-start-column="44" selection-end-line="39" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/Classify/KNN.java">
+    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/common/MyMath.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="84" column="34" selection-start-line="84" selection-start-column="34" selection-end-line="84" selection-end-column="34" />
+        <state relative-caret-position="565">
+          <caret line="45" column="18" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1551#1552#0" expanded="true" />
+            <element signature="e#1577#1578#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/工作.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+        <state relative-caret-position="421">
+          <caret line="23" column="2" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/SortVertex/comentropy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="858">
+          <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/SortVertex/Probability.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1066">
+          <caret line="41" column="16" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/SortVertex/Degree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1066">
+          <caret line="86" column="5" lean-forward="true" selection-start-line="86" selection-start-column="5" selection-end-line="86" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
