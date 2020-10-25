@@ -14,7 +14,7 @@ public class Weka {
     public static void main(String[] args) throws Exception {
         Output output = new Output();
         output.printStep("读取数据...");
-        String filePath="C:\\Users\\QWsin\\Documents\\weka-data\\iris.arff";
+        String filePath="C:\\Users\\QWsin\\Documents\\weka-data\\irisTrain.arff";
         DataSource source = new DataSource(filePath); //获取数据源
         Instances instances = source.getDataSet();//导入数据
 

@@ -1,35 +1,38 @@
 package cn.qwsin.Graph;
 
-import weka.core.stemmers.Stemmer;
+import cn.qwsin.common.*;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
+import java.io.BufferedReader;
+import java.util.*;
 
 public class Graph<T> {
-    private Map<T, ArrayList<T>> G;
+    private Map<T, Set<T>> G;
 
     public Graph(){
         G = new HashMap<>();
     }
 
     public Graph(String filePath){
-        //TODO:从文件直接加载图
+        G = new HashMap<>();
+        try{
+
+        }catch (Exception e){
+            e.printStackTrace();
+        }
     }
 
     public void addEdge(T u,T v){
-        if(!G.containsKey(u)) G.put(u,new ArrayList<>());;
-        if(!G.containsKey(v)) G.put(v,new ArrayList<>());;
+        if(!G.containsKey(u)) G.put(u,new HashSet<>());;
+        if(!G.containsKey(v)) G.put(v,new HashSet<>());;
         G.get(u).add(v);
         G.get(v).add(u);
     }
 
     public void addVertex(T u){
-        if(!G.containsKey(u)) G.put(u,new ArrayList<>());;
+        if(!G.containsKey(u)) G.put(u,new HashSet<>());;
     }
 
-    public ArrayList<T> to(T u){
+    public Set<T> to(T u){
         return G.get(u);
     }
 
@@ -40,11 +43,13 @@ public class Graph<T> {
     public int vertexSize(){return G.size();}
 
     //统计每个点的度数
-    public Map<T,Integer> getDegree(){
+    public Map<T,Integer> getDegreeAll(){
         Map<T,Integer> D = new HashMap<>();
         for(T v : getVertex()){
             D.put(v,to(v).size());//度数就是出边的数量
         }
         return D;
     }
+
+    public int getDegree(T u){return G.get(u).size();}
 }

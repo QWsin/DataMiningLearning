@@ -25,7 +25,7 @@ public class Weka {
     }
 
     public static void main(String[] args) throws Exception {
-        String filePath="C:\\Users\\QWsin\\Documents\\weka-data\\iris.arff";
+        String filePath="C:\\Users\\QWsin\\Documents\\weka-data\\irisTrain.arff";
         Output output = new Output();
 
         output.printStep("读取数据...");

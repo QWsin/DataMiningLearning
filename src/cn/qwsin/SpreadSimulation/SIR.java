@@ -9,8 +9,8 @@ import java.util.*;
 public class SIR<T> {
     private double pu;//S->I的概率
     private double pb;//I->R的概率
-    private int N=10;//每个节点重复模拟的次数
-    private int len=10;//传播轮数
+    private int N=30;//每个节点重复模拟的次数
+    private int len=2;//传播轮数
     private Map<T,State> state;//记录每个点的状态
     private Random r;
 
@@ -53,9 +53,10 @@ public class SIR<T> {
     }
 
     //进行仿真，返回一个按重要度排序的结点和重要度数组
-    public ArrayList<Pair<T,Double>> simulate(Graph<T> graph){
+    public Pair<Map<T,Double>,ArrayList<T>> simulate(Graph<T> graph){
         Set<T> points = graph.getVertex();
-        ArrayList<Pair<T,Double>> result = new ArrayList<>();
+        ArrayList<T> result = new ArrayList<>();
+        Map<T,Double> sumMap = new HashMap<>();
         for(T v : points){
             double sum=0;
             for(int i=0;i<N;++i){
@@ -63,10 +64,11 @@ public class SIR<T> {
                 sum += run(v,graph);
             }
             sum/=N;
-            result.add(new Pair<>(v,sum));
+            sumMap.put(v,sum);
+            result.add(v);
         }
         //从大到小排序
-        result.sort((o1, o2) -> -o1.getValue().compareTo(o2.getValue()));
-        return result;
+        result.sort((o1, o2) -> -sumMap.get(o1).compareTo(sumMap.get(o2)));
+        return new Pair<>(sumMap,result);
     }
 }

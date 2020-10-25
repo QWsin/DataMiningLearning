@@ -1,12 +1,13 @@
 package cn.qwsin.SortVertex;
 
 import cn.qwsin.Graph.Graph;
+import javafx.util.Pair;
 
 import java.util.*;
 
 public class Probability<T> {
     //b是感染概率
-    public ArrayList<T> sortByProb(Graph<T> graph, double b){
+    public Pair<Map<T,Double>,ArrayList<T>> sortByProb(Graph<T> graph, double b){
         Queue<T> q = new LinkedList<>();
         Map<T,Double> sum = new HashMap<>();
         for(T s : graph.getVertex()){//枚举每一个点
@@ -21,12 +22,15 @@ public class Probability<T> {
             q.offer(s);deep.put(s,1);//起点第一层
             while(!q.isEmpty()){
                 T u = q.poll();
-                if(1-unif_s.get(u) < 1e-5){//剪枝，已经没有什么大影响了
+                if(1-unif_s.get(u) < 1e-6){//剪枝，已经没有什么大影响了
                     continue;
                 }
                 //枚举下一层的点，标记之后放入队列
-                for(T v : graph.to(u)) if(deep.get(v)==0){
-                    q.offer(v);deep.put(v,deep.get(u)+1);
+                for(T v : graph.to(u)) if(deep.get(v)==0 || deep.get(v)==deep.get(u)+1){
+                    if(deep.get(v)==0){
+                        q.offer(v);
+                        deep.put(v,deep.get(u)+1);
+                    }
                     //计算下一层的unif_s值
                     unif_s.put(v,unif_s.get(v)*(1-(1-unif_s.get(u))*b));
                 }
@@ -42,7 +46,7 @@ public class Probability<T> {
         //按照概率排序
         ArrayList<T> res = new ArrayList<>(graph.getVertex());
         res.sort((o1, o2) -> -sum.get(o1).compareTo(sum.get(o2)));
-        return res;
+        return new Pair<>(sum,res);
     }
 
 }

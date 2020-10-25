@@ -81,7 +81,7 @@ public class DecisionTree {
     //flag 0:train 1:test
     private Record getRecord(String s,int flag){
         Record record = new Record();
-        String[] value=s.trim().split("[,]");
+        String[] value=s.trim().split("[,\t ]");
         for(int i=0;i<value.length-1;++i){
             if(isContinuous(attributes.get(i))){
                 //可能出现value为"?"的情况，这种情况使用Double.MAX_VALUE表示

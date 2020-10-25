@@ -6,11 +6,11 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.util.ArrayList;
-import java.util.function.DoublePredicate;
 
-public class readFile {
+public class ReadFile {
+    //读取一行，并转化为数值数组
     public static double[] readLine(String s){
-        String[] tmp = s.trim().split("[, ]");
+        String[] tmp = s.trim().split("\\s+");
         double[] num = new double[tmp.length];
         for(int i=0;i<tmp.length;++i){
             num[i]=Double.parseDouble(tmp[i]);
@@ -28,7 +28,7 @@ public class readFile {
             BufferedReader bf = new BufferedReader(fileReader);
             String s;
             while ((s = bf.readLine()) != null) {
-                data.add(readFile.readLine(s));
+                data.add(ReadFile.readLine(s));
             }
             if(data.size() > 0) {
                 int dim = data.get(0).length;
@@ -38,6 +38,17 @@ public class readFile {
             e.printStackTrace();
         }
         return data;
+    }
+
+    public static BufferedReader getBR(String filePath){
+        try {
+            File file = new File(filePath);
+            FileReader fr = new FileReader(file);
+            return new BufferedReader(fr);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        return null;
     }
 
 }

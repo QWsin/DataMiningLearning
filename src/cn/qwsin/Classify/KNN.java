@@ -67,7 +67,7 @@ public class KNN {
 
         double[] dis = new double[trainSet.size()];//预先把所有距离处理出来.减少计算次数，也方便改为一个极大值
         for(int i=0;i<trainSet.size();++i){
-            dis[i]= MyMath.getDistance(test.data,trainSet.get(i).data,test.data.length);
+            dis[i]= MyMath.getDistance(test.data,trainSet.get(i).data);
         }
 
         //由于k一般都小于10，所以使用每次找出一个的算法，复杂度O(nk),这样的数据范围下，会比排序O(nlogn)快

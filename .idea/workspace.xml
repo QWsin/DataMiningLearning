@@ -1,16 +1,399 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/src/TestSortVertex.java" line="20" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="844bbbb2-ba33-4ded-816e-e43cf9779e75" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/cn/qwsin/Graph/Graph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/qwsin/SortVertex/Degree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/qwsin/SortVertex/Probability.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/qwsin/SortVertex/comentropy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/qwsin/SpreadSimulation/SIR.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/qwsin/common/Count.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/QWsin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/QWsin.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/AA.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/AAPL.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/ABK.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/ABS.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/ABT.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/ADBE.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/ADCT.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/ADI.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/ADM.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/AEP.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/AET.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/AFL.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/AGN.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/AHC.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/AIG.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/ALL.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/ALTR.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/AMAT.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/AMD.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/AMGN.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/AMR.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/ANDW.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/AOC.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/APA.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/APC.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/APCC.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/APD.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/APOL.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/ASH.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/ASO.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/AT.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/AVP.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/AVY.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/AXP.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/AZO.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/BA.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/BAC.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/BAX.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/BBBY.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/BBY.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/BC.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/BCC.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/BCR.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/BDK.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/BDX.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/BEN.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/BGEN.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/BHI.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/BJS.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/BK.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/BLL.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/BLS.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/BMC.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/BMET.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/BMY.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/BNI.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/BOL.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/BR.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/BSC.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/BSX.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/BUD.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/CA.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/CAG.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/CAT.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/CB.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/CBE.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/CC.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/CCE.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/CCL.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/CCU.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/CI.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/CIN.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/CL.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/CLX.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/CMA.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/CMCSA.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/CMS.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/CMVT.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/COF.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/COL.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/CPB.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/CPWR.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/CSC.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/CSCO.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/CSX.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/CTAS.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/CTB.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/CTL.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/CTX.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/CTXS.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/CUM.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/D.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/DAL.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/DCN.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/DD.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/DDS.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/DE.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/DG.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/DIS.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/DJ.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/DLX.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/DNY.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/DOV.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/DOW.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/DRI.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/DTE.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/DUK.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/EC.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/ED.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/EFX.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/EK.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/EMC.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/EMN.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/EMR.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/EOG.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/EQR.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/ERTS.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/ETN.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/ETR.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/F.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/FCX.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/FD.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/FDC.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/FDO.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/FDX.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/FISV.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/FITB.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/FLR.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/FNM.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/FON.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/FPL.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/FRE.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/FRX.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/G.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/GAS.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/GCI.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/GD.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/GDT.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/GDW.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/GE.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/GENZ.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/GIS.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/GLK.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/GLW.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/GM.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/GP.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/GPC.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/GPS.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/GR.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/GT.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/GWW.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/HAL.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/HAS.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/HBAN.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/HCR.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/HD.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/HDI.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/HET.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/HI.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/HIG.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/HLT.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/HMA.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/HNZ.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/HON.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/HPC.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/HRB.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/HRC.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/HSY.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/HUM.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/IBM.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/IFF.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/IGT.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/INTC.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/INTU.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/IP.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/IPG.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/IR.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/ITW.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/JCI.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/JCP.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/JNJ.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/JNY.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/JP.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/JPM.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/K.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/KEY.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/KLAC.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/KMB.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/KMG.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/KO.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/KR.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/KRB.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/KRI.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/LEG.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/LEH.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/LIZ.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/LLTC.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/LLY.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/LMT.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/LNC.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/LOW.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/LPX.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/LSI.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/LTD.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/LTR.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/LUV.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/LXK.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/MAR.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/MAS.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/MAT.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/MBI.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/MCD.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/MDT.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/MEL.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/MER.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/MHP.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/MIL.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/MIR.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/MMC.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/MMM.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/MO.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/MOLX.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/MOT.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/MRK.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/MRO.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/MSFT.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/MTG.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/MU.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/MXIM.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/MYG.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/NAV.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/NBR.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/NCC.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/NEM.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/NI.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/NKE.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/NOC.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/NOVL.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/NSC.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/NSM.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/NTRS.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/NUE.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/NVLS.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/NWL.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/ODP.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/OMC.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/ONE.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/ORCL.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/OXY.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/PAYX.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/PBI.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/PCAR.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/PCG.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/PCL.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/PD.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/PEG.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/PEP.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/PFE.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/PG.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/PGR.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/PH.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/PLL.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/PMTC.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/PNC.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/PNW.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/PPG.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/PPL.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/PSFT.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/PX.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/QCOM.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/QTRN.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/R.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/RATL.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/RBK.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/RDC.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/RIG.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/S.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/SAFC.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/SBC.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/SBUX.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/SCH.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/SFA.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/SGP.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/SHW.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/SIAL.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/SLB.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/SLE.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/SLM.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/SLR.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/SNA.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/SNV.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/SO.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/SOTR.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/SPC.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/SPG.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/SPLS.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/STI.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/STT.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/SUN.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/SUNW.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/SVU.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/SWK.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/SWY.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/SYY.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/T.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/TE.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/TEK.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/TER.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/THC.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/TIF.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/TIN.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/TJX.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/TLAB.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/TMK.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/TMO.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/TNB.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/TOY.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/TRB.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/TRW.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/TXN.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/TXT.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/TXU.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/TYC.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/UCL.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/UIS.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/UNH.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/UNM.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/UNP.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/UPC.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/UST.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/UTX.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/VFC.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/WAG.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/WB.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/WEN.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/WFC.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/WHR.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/WIN.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/WMB.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/WMT.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/WWY.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/WY.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/X.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/XLNX.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/XRX.SQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/聚类算法.pptx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/96-SP500/股票标记.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/TestSortVertex.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/classify/4data.test" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/classify/4data.train" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/classify/adult.data" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/classify/adult.test" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/classify/irisTest.data" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/classify/irisTrain.data" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/ratings.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/ratings_disc.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/testMatrixdata.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/可用网络/jazz.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/股票结果/DBSCANresult.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/股票结果/DBSCAN分析结果.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/股票结果/Kmeansresult.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/股票结果/Kmeans分析结果.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/股票结果/kinds.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TestMatrix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TestRecommend.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TestSortVertex.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/qwsin/Recommend/BiGraph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/qwsin/Recommend/LoadData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/qwsin/Recommend/MatrixBased.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/qwsin/Recommend/UserItemCF.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/qwsin/common/Init.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stockAnalyze.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TestDecisionTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestDecisionTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/qwsin/Classify/DecisionTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/qwsin/Classify/DecisionTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/qwsin/Classify/KNN.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/qwsin/Classify/KNN.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/qwsin/Cluster/DBSCAN.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/qwsin/Cluster/DBSCAN.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/qwsin/Cluster/Kmeans.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/qwsin/Cluster/Kmeans.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/qwsin/FeatureSelection/Weka.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/qwsin/FeatureSelection/Weka.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/qwsin/Graph/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/qwsin/Graph/Graph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/qwsin/Normalize/Weka.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/qwsin/Normalize/Weka.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/qwsin/SortVertex/Degree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/qwsin/SortVertex/Degree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/qwsin/SortVertex/Probability.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/qwsin/SortVertex/Probability.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/qwsin/SortVertex/comentropy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/qwsin/SortVertex/Comentropy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/qwsin/SpreadSimulation/SIR.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/qwsin/SpreadSimulation/SIR.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/qwsin/common/Count.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/qwsin/common/Count.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cn/qwsin/common/MyMath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/qwsin/common/MyMath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/qwsin/common/readFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/qwsin/common/ReadFile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/工作.txt" beforeDir="false" afterPath="$PROJECT_DIR$/工作.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -29,96 +412,49 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/工作.txt">
+        <entry file="file://$PROJECT_DIR$/src/cn/qwsin/Classify/DecisionTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="421">
-              <caret line="23" column="2" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/qwsin/SortVertex/comentropy.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="858">
-              <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+            <state relative-caret-position="77">
+              <caret line="83" column="44" selection-start-line="83" selection-start-column="44" selection-end-line="83" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/qwsin/SortVertex/Probability.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1066">
-              <caret line="41" column="16" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#3189#3653#0" />
+                <element signature="e#3659#4055#0" />
+                <element signature="e#4061#5000#0" />
+                <element signature="e#6458#6834#0" />
+                <element signature="e#6840#7475#0" />
+                <element signature="e#7481#7682#0" />
+                <element signature="e#7688#8036#0" />
+                <element signature="e#8042#8320#0" />
+                <element signature="e#8326#8665#0" />
+                <element signature="e#10126#10584#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/cn/qwsin/SortVertex/Degree.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1066">
-              <caret line="86" column="5" lean-forward="true" selection-start-line="86" selection-start-column="5" selection-end-line="86" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/qwsin/common/MyMath.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="565">
-              <caret line="45" column="18" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1551#1552#0" expanded="true" />
-                <element signature="e#1577#1578#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/qwsin/common/Count.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/qwsin/SpreadSimulation/SIR.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1040">
-              <caret line="67" column="16" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/qwsin/Graph/Graph.java">
+        <entry file="file://$PROJECT_DIR$/src/TestDecisionTree.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="312">
-              <caret line="39" column="44" selection-start-line="39" selection-start-column="44" selection-end-line="39" selection-end-column="44" />
+              <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/classify/4data.train">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/classify/4data.test">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="305">
+              <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -139,6 +475,11 @@
       <find>build</find>
       <find>System</find>
       <find>random</find>
+      <find>1 2</find>
+      <find>Basic Materials</find>
+      <find>Consumer Goods</find>
+      <find>Industrial Goods</find>
+      <find />
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -147,13 +488,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/cn/qwsin/MissingValues/MyMissingValues.java" />
-        <option value="$PROJECT_DIR$/src/cn/qwsin/FeatureSelection/WekaFeatureSelection.java" />
-        <option value="$PROJECT_DIR$/src/cn/qwsin/Normalize/WekaNormalize.java" />
-        <option value="$PROJECT_DIR$/src/cn/qwsin/InstanceOutput/Output.java" />
-        <option value="$PROJECT_DIR$/src/cn/qwsin/FPMining/Apriori.java" />
-        <option value="$PROJECT_DIR$/src/TestApriori.java" />
-        <option value="$PROJECT_DIR$/src/cn/qwsin/TestKNN.java" />
         <option value="$PROJECT_DIR$/src/cn/qwsin/MissingValues/MissingValuesForWeka.java" />
         <option value="$PROJECT_DIR$/src/cn/qwsin/common/findMost.java" />
         <option value="$PROJECT_DIR$/src/cn/qwsin/common/Find.java" />
@@ -161,27 +495,50 @@
         <option value="$PROJECT_DIR$/src/cn/qwsin/MissingValues/MissingValueForGeneral.java" />
         <option value="$PROJECT_DIR$/src/cn/qwsin/MissingValues/MissingValueForSetRecord.java" />
         <option value="$PROJECT_DIR$/src/cn/qwsin/Normalize/listArray.java" />
-        <option value="$PROJECT_DIR$/src/cn/qwsin/Normalize/ListArray.java" />
         <option value="$PROJECT_DIR$/src/TestKmeans.java" />
         <option value="$PROJECT_DIR$/src/cn/qwsin/Cluster/PicUtility.java" />
-        <option value="$PROJECT_DIR$/src/cn/qwsin/common/readFile.java" />
-        <option value="$PROJECT_DIR$/src/cn/qwsin/Cluster/Kmeans.java" />
         <option value="$PROJECT_DIR$/src/TestDBSCAN.java" />
         <option value="$PROJECT_DIR$/src/cn/qwsin/Normalize/Weka.java" />
         <option value="$PROJECT_DIR$/src/cn/qwsin/FeatureSelection/Weka.java" />
         <option value="$PROJECT_DIR$/src/cn/qwsin/FrequentPatternMining/Apriori.java" />
         <option value="$PROJECT_DIR$/src/cn/qwsin/Classify/KNN.java" />
-        <option value="$PROJECT_DIR$/src/cn/qwsin/Classify/DecisionTree.java" />
-        <option value="$PROJECT_DIR$/src/TestDecisionTree.java" />
-        <option value="$PROJECT_DIR$/src/cn/qwsin/Cluster/DBSCAN.java" />
+        <option value="$PROJECT_DIR$/src/cn/qwsin/Normalize/ListArray.java" />
+        <option value="$PROJECT_DIR$/src/cn/qwsin/common/readFile.java" />
+        <option value="$PROJECT_DIR$/src/cn/qwsin/common/Init.java" />
+        <option value="$PROJECT_DIR$/data/ratings.txt" />
+        <option value="$PROJECT_DIR$/src/cn/qwsin/Recommend/ItemCF.java" />
+        <option value="$PROJECT_DIR$/src/cn/qwsin/Recommend/UserCF.java" />
+        <option value="$PROJECT_DIR$/data/ratings_disc.txt" />
+        <option value="$PROJECT_DIR$/src/cn/qwsin/Recommend/loadData.java" />
+        <option value="$PROJECT_DIR$/data/testMatrixdata.txt" />
+        <option value="$PROJECT_DIR$/data/iris.arff" />
+        <option value="$PROJECT_DIR$/data/irisTrain.arff" />
+        <option value="$PROJECT_DIR$/src/cn/qwsin/Recommend/MatrixBased.java" />
+        <option value="$PROJECT_DIR$/src/TestMatrix.java" />
+        <option value="$PROJECT_DIR$/工作.txt" />
+        <option value="$PROJECT_DIR$/data/TestSortVertex" />
+        <option value="$PROJECT_DIR$/data/TestSortVertex.txt" />
+        <option value="$PROJECT_DIR$/src/cn/qwsin/SortVertex/comentropy.java" />
+        <option value="$PROJECT_DIR$/src/cn/qwsin/SortVertex/Probability.java" />
+        <option value="$PROJECT_DIR$/src/cn/qwsin/SortVertex/Degree.java" />
         <option value="$PROJECT_DIR$/src/cn/qwsin/common/Count.java" />
         <option value="$PROJECT_DIR$/src/cn/qwsin/SpreadSimulation/SIR.java" />
+        <option value="$PROJECT_DIR$/src/TestSortVertex.java" />
+        <option value="$PROJECT_DIR$/data/股票结果/kinds.txt" />
+        <option value="$PROJECT_DIR$/data/股票结果/DBSCAN分析结果.txt" />
+        <option value="$PROJECT_DIR$/src/cn/qwsin/Cluster/DBSCAN.java" />
+        <option value="$PROJECT_DIR$/src/cn/qwsin/Cluster/Kmeans.java" />
+        <option value="$PROJECT_DIR$/data/股票结果/Kmeans分析结果.txt" />
+        <option value="$PROJECT_DIR$/data/股票结果/Kmeansresult.txt" />
+        <option value="$PROJECT_DIR$/src/stockAnalyze.java" />
+        <option value="$PROJECT_DIR$/src/cn/qwsin/Recommend/UserItemCF.java" />
         <option value="$PROJECT_DIR$/src/cn/qwsin/Graph/Graph.java" />
-        <option value="$PROJECT_DIR$/src/cn/qwsin/SortVertex/Probability.java" />
         <option value="$PROJECT_DIR$/src/cn/qwsin/common/MyMath.java" />
-        <option value="$PROJECT_DIR$/src/cn/qwsin/SortVertex/comentropy.java" />
-        <option value="$PROJECT_DIR$/工作.txt" />
-        <option value="$PROJECT_DIR$/src/cn/qwsin/SortVertex/Degree.java" />
+        <option value="$PROJECT_DIR$/src/cn/qwsin/Recommend/BiGraph.java" />
+        <option value="$PROJECT_DIR$/src/TestRecommend.java" />
+        <option value="$PROJECT_DIR$/data/classify/4data.test" />
+        <option value="$PROJECT_DIR$/src/cn/qwsin/Classify/DecisionTree.java" />
+        <option value="$PROJECT_DIR$/src/TestDecisionTree.java" />
       </list>
     </option>
   </component>
@@ -197,14 +554,25 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="DataMiningLearning" type="b2602c69:ProjectViewProjectNode" />
               <item name="DataMiningLearning" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataMiningLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataMiningLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataMiningLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataMiningLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="classify" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DataMiningLearning" type="b2602c69:ProjectViewProjectNode" />
@@ -223,76 +591,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="qwsin" type="462c0819:PsiDirectoryNode" />
               <item name="Classify" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataMiningLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataMiningLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="qwsin" type="462c0819:PsiDirectoryNode" />
-              <item name="Cluster" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataMiningLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataMiningLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="qwsin" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataMiningLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataMiningLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="qwsin" type="462c0819:PsiDirectoryNode" />
-              <item name="FeatureSelection" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataMiningLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataMiningLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="qwsin" type="462c0819:PsiDirectoryNode" />
-              <item name="FrequentPatternMining" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataMiningLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataMiningLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="qwsin" type="462c0819:PsiDirectoryNode" />
-              <item name="Graph" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataMiningLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataMiningLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="qwsin" type="462c0819:PsiDirectoryNode" />
-              <item name="InstanceOutput" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataMiningLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataMiningLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="qwsin" type="462c0819:PsiDirectoryNode" />
-              <item name="MissingValues" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataMiningLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataMiningLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="qwsin" type="462c0819:PsiDirectoryNode" />
-              <item name="Normalize" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataMiningLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataMiningLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="qwsin" type="462c0819:PsiDirectoryNode" />
-              <item name="SortVertex" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataMiningLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataMiningLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="qwsin" type="462c0819:PsiDirectoryNode" />
-              <item name="SpreadSimulation" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DataMiningLearning" type="b2602c69:ProjectViewProjectNode" />
@@ -315,13 +613,24 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../HelloWolrd" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/data/classify" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\QWsin\IdeaProjects\DataMiningLearning\data\classify" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\QWsin\IdeaProjects\DataMiningLearning\data\classify" />
+      <recent name="C:\Users\QWsin\IdeaProjects\DataMiningLearning\data\股票结果" />
+      <recent name="C:\Users\QWsin\IdeaProjects\DataMiningLearning\data\可用网络" />
+      <recent name="C:\Users\QWsin\IdeaProjects\DataMiningLearning\data" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -422,7 +731,19 @@
       <workItem from="1592836782639" duration="115000" />
       <workItem from="1592911027645" duration="6406000" />
       <workItem from="1592967216965" duration="4243000" />
-      <workItem from="1592997691442" duration="9527000" />
+      <workItem from="1592997691442" duration="9591000" />
+      <workItem from="1593062623931" duration="4879000" />
+      <workItem from="1593087984753" duration="6416000" />
+      <workItem from="1593139907867" duration="3565000" />
+      <workItem from="1593227625687" duration="76000" />
+      <workItem from="1593228555303" duration="18115000" />
+      <workItem from="1593312591513" duration="1083000" />
+      <workItem from="1593332703688" duration="9509000" />
+      <workItem from="1593345339596" duration="7642000" />
+      <workItem from="1593396638301" duration="31314000" />
+      <workItem from="1593481414448" duration="24006000" />
+      <workItem from="1598599789762" duration="624000" />
+      <workItem from="1603625369212" duration="813000" />
     </task>
     <task id="LOCAL-00001" summary="对于离散属性的决策树分类算法完成">
       <created>1590982784011</created>
@@ -466,11 +787,18 @@
       <option name="project" value="LOCAL" />
       <updated>1592836825979</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="完成结点排序（3种模型，5种方法），SIR传播仿真">
+      <created>1593007859180</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1593007859180</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="198837000" />
+    <option name="totallyTimeSpent" value="306943000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -483,18 +811,19 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1488" height="878" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.47167325" visible="true" weight="0.26345214" />
-      <window_info id="Structure" order="1" sideWeight="0.5276316" side_tool="true" weight="0.24248777" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.46903822" weight="0.19916143" />
+      <window_info id="Structure" order="1" sideWeight="0.5309618" side_tool="true" weight="0.19077568" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" sideWeight="0.50065875" side_tool="true" weight="0.2494759" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32938075" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.45322794" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.49011856" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32806325" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4996506" weight="0.5243742" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.43741766" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32806325" />
@@ -502,7 +831,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32674572" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32806325" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32806325" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5003494" side_tool="true" weight="0.45322794" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32806325" />
       <window_info anchor="bottom" id="Duplicates" order="13" weight="0.32806325" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -514,19 +843,20 @@
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Database" order="8" />
+      <window_info anchor="right" id="Coverage" order="9" side_tool="true" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4743083" visible="true" weight="0.27672955" />
-      <window_info active="true" id="Structure" order="1" sideWeight="0.5256917" side_tool="true" visible="true" weight="0.27672955" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.46903822" visible="true" weight="0.19916143" />
+      <window_info id="Structure" order="1" sideWeight="0.5309618" side_tool="true" weight="0.19077568" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" sideWeight="0.50065875" side_tool="true" weight="0.2494759" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32938075" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.45322794" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.49011856" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32806325" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4996506" weight="0.33465084" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.43741766" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32806325" />
@@ -534,7 +864,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32674572" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32806325" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32806325" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5003494" side_tool="true" weight="0.45322794" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32806325" />
       <window_info anchor="bottom" id="Duplicates" order="13" weight="0.32806325" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -546,10 +876,14 @@
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Database" order="8" />
+      <window_info anchor="right" id="Coverage" order="9" side_tool="true" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.test" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -598,7 +932,8 @@
     <MESSAGE value="添加了CART构建决策树的方法" />
     <MESSAGE value="完成了聚类的Kmeans和DBSCAN算法" />
     <MESSAGE value="修改CART建树（之前算法错了），添加若干注释" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改CART建树（之前算法错了），添加若干注释" />
+    <MESSAGE value="完成结点排序（3种模型，5种方法），SIR传播仿真" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成结点排序（3种模型，5种方法），SIR传播仿真" />
   </component>
   <component name="WindowStateProjectService">
     <state x="242" y="91" key="#com.intellij.execution.impl.EditConfigurationsDialog" />
@@ -631,15 +966,15 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/cn/qwsin/Classify/DecisionTree.java</url>
-          <line>461</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/cn/qwsin/Classify/DecisionTree.java</url>
-          <line>456</line>
+          <line>85</line>
           <properties />
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/stockAnalyze.java</url>
+          <line>85</line>
+          <properties />
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -655,172 +990,16 @@
         <watch expression="records" />
         <watch expression="records.toArray()[2]" />
         <watch expression="root" />
+        <watch expression="data.get(0)" />
+        <watch expression="data.get(0)" language="JAVA" />
+        <watch expression="graph" />
       </configuration>
     </watches-manager>
   </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/DataMiningLearning$TestSortVertex.ic" NAME="TestSortVertex Coverage Results" MODIFIED="1593429205554" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_241/src.zip!/java/util/Set.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1625">
-          <caret line="127" column="16" selection-start-line="127" selection-start-column="16" selection-end-line="127" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_241/src.zip!/java/lang/Double.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="500" column="25" selection-start-line="500" selection-start-column="25" selection-end-line="500" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/InstanceOutput/Output.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="21" column="42" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/Classify/RandomForest.java" />
-    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/MissingValues/SetRecord.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/common/Find.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="5" column="39" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/util/PicUtility.java" />
-    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/common/readFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/Cluster/PicUtility.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/Normalize/ListArray.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_241/src.zip!/java/util/Map.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="239" column="6" selection-start-line="239" selection-start-column="6" selection-end-line="239" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/MissingValues/Weka.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
-          <caret line="36" column="9" selection-start-line="11" selection-start-column="8" selection-end-line="36" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/FeatureSelection/Weka.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="24" column="5" selection-start-line="13" selection-start-column="4" selection-end-line="24" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/FrequentPatternMining/Apriori.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6032">
-          <caret line="234" column="36" selection-start-line="234" selection-start-column="36" selection-end-line="234" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TestKmeans.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TestKNN.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TestApriori.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="676">
-          <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/Normalize/Weka.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="15" selection-start-line="15" selection-end-line="21" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/Cluster/Kmeans.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="858">
-          <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="109" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/Cluster/DBSCAN.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1300">
-          <caret line="56" column="4" selection-start-line="56" selection-start-column="4" selection-end-line="98" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/Classify/KNN.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2002">
-          <caret line="84" column="34" selection-start-line="84" selection-start-column="34" selection-end-line="84" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/TestDBSCAN.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
@@ -838,18 +1017,360 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/Classify/DecisionTree.java">
+    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/Normalize/ListArray.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="657">
-          <caret line="483" column="23" selection-start-line="483" selection-start-column="23" selection-end-line="483" selection-end-column="23" />
+        <state relative-caret-position="598">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/ratings.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/Recommend/ItemCF.java" />
+    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/common/Init.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/common/ReadFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2328#3183#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/irisTrain.arff" />
+    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/Recommend/MatrixBased.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="49" column="31" selection-start-line="49" selection-start-column="31" selection-end-line="49" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/classify/irisTrain.data">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/ratings_disc.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="5" column="7" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TestMatrix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="4" column="51" selection-start-line="4" selection-start-column="51" selection-end-line="4" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/工作.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/testMatrixdata.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="3" selection-start-column="3" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/可用网络/aves-wildbird-network.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="3" column="3" lean-forward="true" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/可用网络/road-minnesota.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/可用网络/Yeast.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/SortVertex/Comentropy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="34" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/SortVertex/Probability.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1196">
+          <caret line="49" column="5" selection-start-line="8" selection-start-column="4" selection-end-line="49" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/可用网络/jazz.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/可用网络/email-Eu-core.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/common/Count.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="839">
+          <caret line="38" column="20" lean-forward="true" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/TestSortVertex.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="13" column="3" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/可用网络/inf-openflights.edges">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/SpreadSimulation/SIR.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/SortVertex/Degree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="657">
+          <caret line="80" column="31" selection-start-line="80" selection-start-column="31" selection-end-line="80" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TestSortVertex.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/股票结果/Kmeansresult.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/股票结果/Kmeans分析结果.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="9" column="18" lean-forward="true" selection-end-line="9" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/股票结果/DBSCANresult.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="28" column="6" lean-forward="true" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/股票结果/DBSCAN分析结果.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" column="10" lean-forward="true" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/股票结果/kinds.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4030">
+          <caret line="155" column="20" lean-forward="true" selection-start-line="155" selection-start-column="20" selection-end-line="155" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stockAnalyze.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1736">
+          <caret line="126" column="14" lean-forward="true" selection-start-line="126" selection-start-column="14" selection-end-line="126" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/Recommend/LoadData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TestApriori.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="676">
+          <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/Cluster/Kmeans.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2165">
+          <caret line="184" column="36" selection-start-line="184" selection-start-column="36" selection-end-line="184" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/Cluster/DBSCAN.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="68" column="8" selection-start-line="68" selection-start-column="8" selection-end-line="74" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/Graph/Graph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1144">
+          <caret line="53" column="53" selection-start-line="53" selection-start-column="53" selection-end-line="53" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/Recommend/BiGraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="962">
+          <caret line="46" column="40" selection-start-line="46" selection-start-column="40" selection-end-line="46" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/Recommend/UserItemCF.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3900">
+          <caret line="153" column="17" selection-start-line="153" selection-start-column="17" selection-end-line="153" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/common/MyMath.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="58" column="25" selection-start-line="58" selection-start-column="25" selection-end-line="58" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#CaculateCorrelation#0;class#MyMath#0" />
+            <element signature="method#mean#0;class#MyMath#0" />
+            <element signature="method#mean#1;class#MyMath#0" />
+            <element signature="method#variance#0;class#MyMath#0" />
+            <element signature="method#rot#0;class#MyMath#0" />
+            <element signature="method#mul#0;class#MyMath#0" />
+            <element signature="method#mul#1;class#MyMath#0" />
+            <element signature="method#add#0;class#MyMath#0" />
+            <element signature="method#minus#0;class#MyMath#0" />
+            <element signature="method#getRandMatrix#0;class#MyMath#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/FeatureSelection/Weka.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/classify/adult.data">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="16" column="132" selection-start-line="16" selection-start-column="132" selection-end-line="16" selection-end-column="132" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/classify/adult.test">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/classify/irisTest.data">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/classify/4data.train">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TestRecommend.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/classify/4data.test">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/MissingValues/SetRecord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/Classify/DecisionTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="77">
+          <caret line="83" column="44" selection-start-line="83" selection-start-column="44" selection-end-line="83" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
             <element signature="e#3189#3653#0" />
             <element signature="e#3659#4055#0" />
             <element signature="e#4061#5000#0" />
-            <element signature="e#5580#6006#0" />
-            <element signature="e#6012#6451#0" />
             <element signature="e#6458#6834#0" />
             <element signature="e#6840#7475#0" />
             <element signature="e#7481#7682#0" />
@@ -863,87 +1384,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TestDecisionTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/common/Count.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/SpreadSimulation/SIR.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1040">
-          <caret line="67" column="16" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/Graph/Graph.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
-          <caret line="39" column="44" selection-start-line="39" selection-start-column="44" selection-end-line="39" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/common/MyMath.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="565">
-          <caret line="45" column="18" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1551#1552#0" expanded="true" />
-            <element signature="e#1577#1578#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/工作.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="23" column="2" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/SortVertex/comentropy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="858">
-          <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/SortVertex/Probability.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1066">
-          <caret line="41" column="16" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/qwsin/SortVertex/Degree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1066">
-          <caret line="86" column="5" lean-forward="true" selection-start-line="86" selection-start-column="5" selection-end-line="86" selection-end-column="5" />
+          <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
