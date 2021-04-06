@@ -9,6 +9,7 @@ import java.util.Map;
 import java.util.Set;
 
 public class SetRecord {
+    //对连续值和离散值分别进行平均数填充和众数填充
     public static void fillMissing(Set<DecisionTree.Record> records, ArrayList<String> attributes, DecisionTree tree){
         for (String name : attributes) {
             if (tree.isContinuous(name)) {

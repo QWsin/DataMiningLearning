@@ -9,6 +9,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
+//二部图推荐算法，包含物质扩散和热传导两个方法
 public class BiGraph {
     private Graph<Integer> graph;//保存二部图
     private ArrayList<ArrayList<Double>> rating;//评分矩阵

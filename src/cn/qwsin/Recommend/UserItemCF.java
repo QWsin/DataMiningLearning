@@ -5,6 +5,7 @@ import cn.qwsin.common.*;
 import java.io.PrintStream;
 import java.util.*;
 
+//基于邻域的协同过滤算法
 public class UserItemCF {
 
     private int mostSimNum;//最相似的用户数量

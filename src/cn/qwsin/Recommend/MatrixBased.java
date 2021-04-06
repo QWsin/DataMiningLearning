@@ -135,3 +135,54 @@ public class MatrixBased {
         return predict[i][j];
     }
 }
+
+/*
+Matlab
+
+clear all;clc;
+data=importdata('C:\Users\QWsin\Desktop\文档\课程相关\数据挖掘课设\课程
+资料_推荐系统\ml-latest-small\ratings_disc2.txt');
+u=max(data(:,1));%用户数
+m=max(data(:,2));%电影数
+D=-ones(u,m);
+[r,c]=size(data);
+for i=1:r
+D(data(i,1),data(i,2))=data(i,3);
+end
+n=5;%特征维数alpha=0.0001;%学习率
+lambda=0.1;
+U=randn(u,n);
+M=randn(m,n);
+predict=zeros(u,m);
+Q=ones(u,m);
+Up=U;
+Mp=M;
+tmp = find(D==-1);
+Q(tmp)=0;
+for j=1:3000
+predict=U*M'.*Q;
+R=D-predict;
+for i=1:u
+tmp=find(Q(i,:)==1);
+M_=M(tmp,:);
+Up(i,:)=(U(i,:)*M_'-D(i,tmp))*M_+lambda*U(i,:);
+end
+U=U-alpha*Up;
+for i=1:m
+tmp=find(Q(:,i)==1);
+U_=U(tmp,:);
+Mp(i,:)=(U_*M(i,:)'-D(tmp,i))'*U_+lambda*M(i,:);
+end
+M=M-alpha*Mp;
+%U=U-2*alpha*(-R*M+lambda*U);
+%M=M-2*alpha*(-R'*U+lambda*M);
+L=sum(sum(R.^2))+lambda*(sum(sum(U.^2))+sum(sum(M.^2)));
+fprintf("j=%d L=%.6f\n",j,L);
+end
+for i=1:20
+fprintf("%.4f ",predict(1,i));
+end
+[r,c]=size(find(D==-1));
+MSE=sum(sum((predict.*Q-D).^2))/(u*m-r);
+
+ */

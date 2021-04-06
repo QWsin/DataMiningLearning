@@ -26,10 +26,6 @@ public class DecisionTree {
     private TreeNode root;//保存树根
     private ArrayList<TreeNode> forest;//保存随机森林树根
 
-    //便于选择建树的时候用的方法
-    final public static String ID3="ID3";
-    final public static String CART="CART";
-
     public DecisionTree(){
         records = new HashSet<>();
         idOfLabel = new HashMap<>();
@@ -39,7 +35,7 @@ public class DecisionTree {
         forest = new ArrayList<>();
         random = new Random();
         ValueOfAttrs = new HashMap<>();
-        N = 8;
+        N = 11;
     }
 
     //Record类表示数据集中一条记录
@@ -179,6 +175,7 @@ public class DecisionTree {
         return gain;
     }
 
+    //找出信息熵增益最大的那个属性，返回该属性名称
     private String findMaxPartition(Set<Record> records, Set<String> attrNames){
         double maxGain=0;//记录最大信息增益和对应属性名
         String maxGainName="";
@@ -328,13 +325,15 @@ public class DecisionTree {
     }
 
     //建单独的树
-    private TreeNode rootTree_ID3(Set<Record> records,Set<String> attrNames){
+    private TreeNode rootTree_ID3(Set<Record> records,Set<String> attrNames, int dep){
+        System.out.println("------");
         TreeNode root=new TreeNode();
         root.records=records;
         //同属一个类别，标记后返回
         if(haveSameLabel(records)) {
             for (Record record : records) {
                 root.label = record.label;
+                System.out.println("dep:"+dep+" 叶子节点,类别"+root.label);
                 return root;
             }
         }
@@ -342,17 +341,17 @@ public class DecisionTree {
         //没有可用来划分的属性或者所有记录在可用属性都有相同的值
         if(attrNames.size() == 0 || haveSameValue(records,attrNames)){
             root.label=findTheMostLabel(records);
+            System.out.println("dep:"+dep+" 叶子节点,类别"+root.label);
             return root;
         }
 
         String name = findMaxPartition(records,attrNames);
-//        }else if(flag.equals(CART)){
-//            name = findMinGini(records,attrNames);
 
         if(name.equals("")){
             name = attrNames.stream().findFirst().orElse(name);
         }
         root.attrName=name;
+        System.out.println("dep:"+dep+" 选择的属性:"+root.attrName);
 
         //构建新的可用属性集合（去除本节点使用的）
         Set<String> newAttrNames = new HashSet<>(attrNames);
@@ -365,11 +364,13 @@ public class DecisionTree {
             attributeField.name=name;
             if(!isContinuous(name)) {
                 attributeField.attrValueDisc = entry.getKey();
+                System.out.println("attrValueDisc:"+attributeField.attrValueDisc);
             }
             else{
                 attributeField.attrValueCont = entry.getKey();
+                System.out.println("attrValueCont:"+attributeField.attrValueCont);
             }
-            root.children.put(attributeField,rootTree_ID3(entry.getValue(),newAttrNames));
+            root.children.put(attributeField,rootTree_ID3(entry.getValue(),newAttrNames,dep+1));
         }
         return root;
     }
@@ -424,7 +425,7 @@ public class DecisionTree {
             else{
                 attributeField.attrValueCont = entry.getKey();
             }
-            root.children.put(attributeField,rootTree_ID3(entry.getValue(),newAttrNames));
+//            root.children.put(attributeField,rootTree_CART(entry.getValue(),newAttrNames));
         }
         return root;
     }
@@ -515,8 +516,8 @@ public class DecisionTree {
         return "";
     }
 
+    //打印记录，调试语句
     private void printRecords(){
-        //打印记录，调试语句
         for(Record record : records){
             for(Map.Entry<String,String> entry : record.attrDisc.entrySet()){
                 System.out.print(entry.getKey()+":"+entry.getValue()+", ");
@@ -613,10 +614,12 @@ public class DecisionTree {
         for(Map.Entry<String,Double> entry : minV.entrySet()){
             double m=entry.getValue();//该属性最小值
             double M=maxV.get(entry.getKey());//该属性最大值
+            System.out.println("属性："+entry.getKey()+" 最小值:"+m+" 最大值:"+M);
             ArrayList<Double> divide = new ArrayList<>();
             for(int i=0;i<=N;++i){//N+1个点划分
                 divide.add((m*(N-i)+M*i)/N);
             }
+            System.out.println(divide);
             dividePoint.put(entry.getKey(),divide);
         }
 
@@ -632,7 +635,7 @@ public class DecisionTree {
     }
 
     public void buildTree_ID3(){
-        root=rootTree_ID3(records,attributesSet);
+        root=rootTree_ID3(records,attributesSet,1);
     }
 
     public void buildTree_CART(){
@@ -689,10 +692,10 @@ public class DecisionTree {
             ++check[idOfLabel.get(record.answer)][idOfLabel.get(record.label)];
             if(record.label.equals(record.answer)) ok+=1;
         }
-        System.out.printf("测试集共%d个数据，共正确%d个，错误%d个，正确率%.3f%%\n",result.size(),ok,result.size()-ok,(double)ok/result.size()*100);
+        System.out.printf("测试集共%d个数据，共正确%d个，错误%d个，正确率%.3f%%(上方Label为测试集给出的答案)\n",result.size(),ok,result.size()-ok,(double)ok/result.size()*100);
 
         //打印首行
-        System.out.print("\t\t");
+        System.out.print("\t");
         for (String name : Labels) System.out.print(name + "\t");
         System.out.println();
 
