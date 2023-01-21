@@ -21,7 +21,7 @@ public class SIR<T> {
         r = new Random();
     }
 
-    public enum State{
+    private enum State{
         S, I, R
     }
 

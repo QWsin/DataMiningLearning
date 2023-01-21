@@ -1,27 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/src/TestSortVertex.java" line="20" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="844bbbb2-ba33-4ded-816e-e43cf9779e75" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/决策树和随机森林.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/推荐系统.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/网络节点排序及仿真.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/聚类.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/qwsin/README.md" afterDir="false" />
+    <list default="true" id="844bbbb2-ba33-4ded-816e-e43cf9779e75" name="Default Changelist" comment="学期结束后较为完整的保存">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/qwsin/Classify/DecisionTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/qwsin/Classify/DecisionTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/qwsin/Cluster/PicUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/qwsin/Cluster/PicUtility.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/qwsin/MissingValues/SetRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/qwsin/MissingValues/SetRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/qwsin/Recommend/BiGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/qwsin/Recommend/BiGraph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/qwsin/Recommend/MatrixBased.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/qwsin/Recommend/MatrixBased.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/qwsin/Recommend/UserItemCF.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/qwsin/Recommend/UserItemCF.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/qwsin/common/Count.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/qwsin/common/Count.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/qwsin/SpreadSimulation/SIR.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/qwsin/SpreadSimulation/SIR.java" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,19 +21,6 @@
   </component>
   <component name="FavoritesManager">
     <favorites_list name="DataMiningLearning" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/cn/qwsin/Classify/DecisionTree.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -265,7 +241,6 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -280,7 +255,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -292,18 +267,6 @@
       <recent name="C:\Users\QWsin\IdeaProjects\DataMiningLearning\data\可用网络" />
       <recent name="C:\Users\QWsin\IdeaProjects\DataMiningLearning\data" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="Application.TestDecisionTree">
     <configuration name="TestDecisionTree" type="Application" factoryName="Application">
@@ -329,11 +292,12 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.WekaFeatureSelection" />
       <item itemvalue="Application.TestDecisionTree" />
+      <item itemvalue="Application.WekaFeatureSelection" />
       <item itemvalue="Application.myMissingValues" />
     </list>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="project-level" UseSingleDictionary="true" transferred="true" />
   <component name="StructureViewFactory">
     <option name="AUTOSCROLL_MODE" value="false" />
     <option name="ACTIVE_ACTIONS" value=",ALPHA_COMPARATOR" />
@@ -561,22 +525,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
-              <option name="COLUMN_ORDER">
-                <list>
-                  <option value="0" />
-                  <option value="1" />
-                  <option value="2" />
-                  <option value="3" />
-                </list>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -595,6 +544,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="对于离散属性的决策树分类算法完成" />
@@ -607,39 +557,12 @@
     <MESSAGE value="学期结束后较为完整的保存" />
     <option name="LAST_COMMIT_MESSAGE" value="学期结束后较为完整的保存" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="242" y="91" key="#com.intellij.execution.impl.EditConfigurationsDialog" />
-    <state x="242" y="91" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1474.864@0.0.1474.864" />
-    <state x="567" y="141" key="#com.intellij.ide.macro.MacrosDialog" />
-    <state x="567" y="141" key="#com.intellij.ide.macro.MacrosDialog/0.0.1474.864@0.0.1474.864" />
-    <state x="517" y="217" key="#com.intellij.ide.util.TreeClassChooserDialog" />
-    <state x="517" y="217" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1474.864@0.0.1474.864" />
-    <state x="562" y="194" key="FileChooserDialogImpl" />
-    <state x="562" y="194" key="FileChooserDialogImpl/0.0.1474.864@0.0.1474.864" />
-    <state width="1433" height="120" key="GridCell.Tab.0.bottom" />
-    <state width="1433" height="120" key="GridCell.Tab.0.bottom/0.0.1474.864@0.0.1474.864" />
-    <state width="1433" height="120" key="GridCell.Tab.0.center" />
-    <state width="1433" height="120" key="GridCell.Tab.0.center/0.0.1474.864@0.0.1474.864" />
-    <state width="1433" height="120" key="GridCell.Tab.0.left" />
-    <state width="1433" height="120" key="GridCell.Tab.0.left/0.0.1474.864@0.0.1474.864" />
-    <state width="1433" height="120" key="GridCell.Tab.0.right" />
-    <state width="1433" height="120" key="GridCell.Tab.0.right/0.0.1474.864@0.0.1474.864" />
-    <state x="269" y="14" key="SettingsEditor" />
-    <state x="269" y="14" key="SettingsEditor/0.0.1474.864@0.0.1474.864" />
-    <state x="387" y="256" key="com.intellij.ide.util.TipDialog" />
-    <state x="387" y="256" key="com.intellij.ide.util.TipDialog/0.0.1474.864@0.0.1474.864" />
-    <state x="0" y="53" key="new project wizard" />
-    <state x="0" y="53" key="new project wizard/0.0.1474.864@0.0.1474.864" />
-    <state x="394" y="197" key="run.anything.popup" />
-    <state x="394" y="197" key="run.anything.popup/0.0.1474.864@0.0.1474.864" />
-  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/stockAnalyze.java</url>
           <line>85</line>
-          <properties />
           <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
@@ -939,7 +862,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Weka-3-8-4/weka.jar!/weka/core/Instances.class">
+    <entry file="jar://$PROJECT_DIR$/../../../../../Program Files/Weka-3-8-4/weka.jar!/weka/core/Instances.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
